@@ -134,13 +134,14 @@ ol li{
   font-family: "Muli";
   font-weight: bold;
   text-align: center;
+  font-size: 80%;
   padding: 10%;
   background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparent;
 }
 .desc-main p{
-  font-size: 300%;
+  font-size: 200%;
   font-weight: bold;
 }
  .desc {
@@ -353,6 +354,7 @@ i:hover{
    .desc-main{
      font-family: "Muli";
      font-weight: bold;
+     font-size: 90%;
      text-align: center;
      padding: 10%;
      background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
@@ -463,6 +465,7 @@ i:hover{
    }
    .desc-main{
      font-family: "Muli";
+     font-size: 100%;
      font-weight: bold;
      text-align: center;
      padding: 10%;
