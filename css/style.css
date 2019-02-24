@@ -18,7 +18,7 @@ body{
  a:link{
      text-decoration: none;
 }
- a:hover{
+ a:hover, a:focus{
      color:#FFC371;
 }
  a:active {
@@ -145,6 +145,10 @@ body{
      font-size: 200%;
      font-weight: bold;
 }
+.desc-main h1{
+    font-size: 180%;
+    font-weight: bold;
+}
  .desc {
     /* font-size: 150%;
      */
@@ -265,7 +269,7 @@ body{
      padding: 2%;
      color: silver;
 }
- i:hover{
+ a i:focus, a i:hover{
      color:#FFC371;
 }
  nav ul {
@@ -281,7 +285,7 @@ body{
      color: #FF5F6D;
      font-size: 180%;
 }
- .projects a:hover{
+ .projects a:focus, .projects a:hover{
      color:#FFC371;
 }
  .ca{
