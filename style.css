@@ -1,6 +1,6 @@
 body{
      margin:3%;
-     font-size: 18px;
+     font-size: 16px;
      color: #202020;
      line-height: 2;
      padding:5%;
@@ -17,12 +17,8 @@ body{
 }
  a:link{
      text-decoration: none;
-    /* color:#5D84FE;
-     */
-    /* font-family: 'Source Sans Pro';
-     */
 }
- a:hover{
+ a:hover, a:focus{
      color:#FFC371;
 }
  a:active {
@@ -34,7 +30,7 @@ body{
      */
      font-weight: bolder;
      border:3px;
-     text-decoration: overline wavy;
+     text-decoration: line-through;
      border-color:black;
 }
  .skip {
@@ -57,9 +53,6 @@ body{
      height: auto;
      grid-template-columns: repeat(autofill, minmax(20vw, 1fr));
 }
-
-
-
  .sub{
      margin-bottom: 8%;
 }
@@ -96,14 +89,24 @@ body{
      margin-left: 10%;
      margin-right: 10%;
 }
-
-h5{
-  font-size: 120%;
-  font-family: 'Source Sans Pro', bold;
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-  color:#FF5F6D;
+ h5{
+     font-size: 120%;
+     font-family: 'Source Sans Pro', bold;
+     margin-top: 30px;
+     margin-left: 10%;
+     margin-right: 10%;
+     color:#FF5F6D;
+}
+ .yellow h5{
+     color: #FFC371;
+}
+ .purple h5{
+     color: #8E32DD;
+}
+ .quotes{
+     font-style: italic;
+     color: gray;
+     font-size: 120%;
 }
  p{
      font-family: "Merriweather";
@@ -115,70 +118,73 @@ h5{
  ul{
      font-family: "Merriweather";
 }
-
  ol{
      font-family: "Merriweather";
      margin-left: 15%;
      margin-right: 15%;
      margin-bottom: 2%;
 }
-
-ol li{
-  margin-bottom: 1em;
+ ol li{
+     margin-bottom: 1em;
 }
  img {
      width: 100%;
      height: 100%;
 }
-.desc-main{
-  font-family: "Muli";
-  font-weight: bold;
-  text-align: center;
-  font-size: 80%;
-  padding: 10%;
-  background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color: transparent;
+ .desc-main{
+     font-weight: bold;
+     font-size: .5em;
+     text-align: left;
+     /* padding: 5%; */
+     background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
+     -webkit-background-clip:text;
+     -webkit-text-fill-color: transparent;
 }
 .desc-main p{
-  font-size: 200%;
-  font-weight: bold;
+  font-size: 3em;
 }
  .desc {
-     /* font-size: 150%; */
+    /* font-size: 150%;
+     */
      font-family: "Muli";
      font-weight: bold;
-     text-align: center;
-     padding: 10%;
+    /* text-align: center;
+     */
+    /* padding: 10%;
+     */
      background: -webkit-linear-gradient(#FF5F6D, #FFC371);
      -webkit-background-clip:text;
      -webkit-text-fill-color: transparent;
     /* margin-left: -5%;
      */
 }
-
-
-.shrink {
-  width:70%;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
+ .shrink {
+     width:80%;
+     text-align: center;
+     margin: auto;
+     padding: .5em;
 }
-.desc a{
-  font-size: .7em;
+ .small {
+     width:60%;
+     text-align: center;
+     margin: auto;
+     padding: .5em;
 }
-
-.unicorn{
-  text-align: center;
-  margin: auto;
-  padding: 10px;
+ .desc a{
+     font-size: .7em;
 }
-.unicorn video{
-  top: 0;
-  bottom: 0;
-  width: 70%;
-  height: auto;
-  /* overflow: hidden; */
+ .unicorn{
+     text-align: center;
+     margin: auto;
+     padding: 10px;
+}
+ .unicorn video{
+     top: 0;
+     bottom: 0;
+     width: 100%;
+     height: auto;
+    /* overflow: hidden;
+     */
 }
  .video{
      top: 0;
@@ -200,15 +206,8 @@ ol li{
  .video2 video{
      width: 100%;
 }
- .button{
-     font-weight: bold;
-     text-align: center;
-     font-family: "Muli";
-     color: black;
-     padding: 5%;
-}
-#color{
-  width: 70%;
+ #color{
+     width: 70%;
 }
  .center{
      text-align: center;
@@ -216,6 +215,14 @@ ol li{
      padding: 10px;
     /* font-size: 200%;
      */
+}
+ .button{
+     font-weight: bolder;
+     text-align: center;
+     text-decoration: none;
+     font-family: "Open Sans";
+     color: black;
+     padding: 5%;
 }
  .box{
      box-sizing: border-box;
@@ -234,11 +241,10 @@ ol li{
      padding: .5rem 1.66667rem;
      margin: auto;
 }
-
-.margin{
-  margin-left: 13%;
-  margin-right: 13%;
-  margin-bottom: 3%;
+ .margin{
+     margin-left: 13%;
+     margin-right: 13%;
+     margin-bottom: 3%;
 }
  main{
      margin:auto;
@@ -252,15 +258,13 @@ ol li{
      color: silver;
      font-size: 80%;
 }
-
  i{
      font-size: 1.5em;
      padding: 2%;
      color: silver;
 }
-
-i:hover{
-  color:#FFC371;
+ a i:focus, a i:hover{
+     color:#FFC371;
 }
  nav ul {
      font-size: 120%;
@@ -275,10 +279,16 @@ i:hover{
      color: #FF5F6D;
      font-size: 180%;
 }
+ .projects a:focus, .projects a:hover{
+     color:#FFC371;
+}
  .ca{
      width: 70%;
      height:auto;
      padding-bottom: 5%;
+}
+ .contact a{
+     text-decoration: underline;
 }
 /* .parent {
      position: relative;
@@ -297,15 +307,21 @@ i:hover{
      left: 0;
 }
  */
+ .icon{
+     width: 20%;
+     padding: 5%;
+}
  .row{
      display: grid;
      grid-template-columns: 2.5fr .5fr;
 }
  .thirds p{
      font-family: "Merriweather";
-     font-size: 80%;
 }
- @media screen and (min-device-width:700px) and (min-width:700px){
+
+
+
+ @media screen and (min-device-width:700px) and (min-width:700px) and (max-width:1000px){
      .scenario{
          display: grid;
          grid-template-columns: repeat(2, 1fr);
@@ -329,44 +345,59 @@ i:hover{
      .graphs div img{
          width: 80%;
     }
-     nav ul {
-         list-style-type: none;
-         display: inline;
-         overflow: hidden;
-         text-align: right;
-         font-family: "Merriweather";
-    }
-     .nav-left {
-         float: left;
-    }
-     .nav-left ul li {
-         float: left;
-    }
-     .nav-right ul li {
-         float: right;
-         width: 20%;
-    }
-    .thirds p{
-        font-family: "Merriweather";
-        font-size: 80%;
+    nav ul {
+        list-style-type: none;
+        overflow: hidden;
+   }
+    .nav-left {
+        float: left;
+   }
+    .nav-left ul li {
+        float: left;
+   }
+    .nav-right ul li {
+        float: right;
+        text-align: right;
+        width: 50%;
    }
 
-   .desc-main{
-     font-family: "Muli";
-     font-weight: bold;
-     font-size: 90%;
-     text-align: center;
-     padding: 10%;
-     background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
-     -webkit-background-clip:text;
-     -webkit-text-fill-color: transparent;
+    .thirds{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items:flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
    }
-   .desc-main p{
-     font-size: 300%;
-     font-weight: bold;
+
+    .thirds video{
+        width: 100%;
+        height: auto;
    }
+     .thirds p{
+         font-family: "Merriweather";
+        /* font-size: 80%;
+         */
+    }
+     .desc-main{
+         font-weight: bold;
+         font-size: 100%;
+         text-align: left;
+         padding: 5%;
+         background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
+         -webkit-background-clip:text;
+         -webkit-text-fill-color: transparent;
+    }
+
 }
  @media screen and (min-device-width:1000px) and (min-width:1000px){
+     .unicorn video{
+         top: 0;
+         bottom: 0;
+         width: 80%;
+         height: auto;
+        /* overflow: hidden;
+         */
+    }
      .scenario{
         /* margin-top: 5%;
          */
@@ -378,7 +409,7 @@ i:hover{
      .projects a{
          display: inline;
          padding: 2%;
-          font-size: 180%;
+         font-size: 180%;
     }
      .personas{
          display:grid;
@@ -410,16 +441,32 @@ i:hover{
      .container {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
-         /* grid-row-gap: .3em;. */
+         margin-left: 5%;
+         margin-right: 5%;
+        /* grid-row-gap: .3em;
+        . */
     }
-    .container div{
-      padding: 5%;
+     .container div{
+         padding: 3%;
     }
-
-     /* .container div:nth-child(odd) {
+     .three{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         margin-left: 7%;
+         margin-right: 7%;
+    }
+    /* .four{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         margin-left: 7%;
+         margin-right: 7%;
+    }
+     */
+    /* .container div:nth-child(odd) {
          padding-top: 10%;
-    } */
-     /* .container p{
+    }
+     */
+    /* .container p{
          color: gray;
          font-family: "Source Sans Pro";
          margin-top: -.6em;
@@ -427,7 +474,8 @@ i:hover{
      .container h2 a{
          font-family: "Muli";
          font-size: 80%;
-    } */
+    }
+     */
      nav ul {
          list-style-type: none;
          overflow: hidden;
@@ -446,35 +494,47 @@ i:hover{
      .thirds{
          display: grid;
          grid-template-columns: repeat(3, 1fr);
-         align-items: center;
+         align-items:flex-start;
          grid-column-gap: 5%;
     }
      .thirds video{
          width: 100%;
          height: auto;
     }
-    .thirds p{
-        font-family: "Merriweather";
-        font-size: 80%;
-        margin-bottom: 2em;
-        margin: 3em;
-   }
-
-   .right-aligned{
-     text-align: right;
-   }
-   .desc-main{
-     font-family: "Muli";
-     font-size: 100%;
-     font-weight: bold;
-     text-align: center;
-     padding: 10%;
-     background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
-     -webkit-background-clip:text;
-     -webkit-text-fill-color: transparent;
-   }
-   .desc-main p{
-     font-size: 300%;
-     font-weight: bold;
-   }
+     .thirds p{
+         font-family: "Merriweather";
+        /* font-size: 80%;
+         */
+         margin-bottom: 2em;
+        /* margin: 3em;
+         */
+    }
+    .thirds > #uno{
+      order:1
+    }
+    .thirds > #dos{
+      order:3
+    }
+    .thirds > #tres{
+      order:2
+    }
+     .right-aligned{
+         text-align: right;
+    }
+     .left-aligned{
+         text-align: left;
+    }
+     .desc-main{
+         font-size: 100%;
+         font-weight: bold;
+         text-align: center;
+         padding: 10%;
+         background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
+         -webkit-background-clip:text;
+         -webkit-text-fill-color: transparent;
+    }
+     .desc-main p{
+         font-size: 300%;
+         font-weight: bold;
+    }
 }
