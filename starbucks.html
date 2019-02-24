@@ -1,98 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <title>Jenny Lee — Starbucks & Happiness</title>
-   </head>
-   <body>
-      <a class = "skip" href="#main">Skip to Content</a>
-      <header>
-         <nav>
-           <div class = "nav-left">
-             <ul>
-               <li><a href="index.html">Jenny Lee</a></li>
-             </ul>
-           </div>
-           <div class = "nav-right">
-             <ul>
-               <li><a href="contact.html">Contact</a></li>
-              <li><a class="current" href="index.html">Work</a></li>
-             </ul>
-          </div>
-         </nav>
-      </header>
-      <br>
-      <main id="main">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Jenny Lee — Starbucks & Happiness</title>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to Content</a>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">Jenny Lee</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="current" href="index.html">Work</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main id="main">
         <br>
-        <img src="images/starbucks.jpg" alt = "starbucks"/>
-           <div>
-              <h1>Does Starbucks make countries happier?</h1>
-              <h2>Data Manipulation</h2>
-              <p>I explored the idea of the correlation between worldwide Starbucks locations and the country’s happiness score. The company has over 26,000 locations worldwide.</p>
-           </div>
-           <div class="center">
-             <a class="button" href="Starbucks+and+Happiness.html">View Code</a>
-           </div>
-         <h3>Motivation</h3>
-         <p>Starbucks makes me and its customers happy. Could it be possible for the biggest coffee house chain in the world to affect the happiness of countries around the world? I wanted to analyze this inquiry on a worldwide scale. By manipulating World Happiness Report data and Starbucks Worldwide Location data, I wanted to see if Starbucks stores in certain countries have correlation to their happiness and GDP. Do richer or happier countries have more Starbucks? What about healthy life expectancy scores or freedom scores? Along with happiness score, I analyzed the effect of number of Starbucks on GDP, healthy life expectancy score, and freedom to make life choices score to discover interesting correlations.</p>
+        <img src="images/starbucks.jpg" alt="starbucks" />
+        <div>
+            <h1>Does Starbucks make countries happier?</h1>
+            <h2>Data Manipulation</h2>
+            <p>I explored the idea of the correlation between worldwide Starbucks locations and the country’s happiness score. The company has over 26,000 locations worldwide.</p>
+        </div>
+        <div class="center">
+            <a class="button" href="Starbucks+and+Happiness.html">View Code</a>
+        </div>
+        <h3>Motivation</h3>
+        <p>Starbucks makes me and its customers happy. Could it be possible for the biggest coffee house chain in the world to affect the happiness of countries around the world? I wanted to analyze this inquiry on a worldwide scale. By manipulating World Happiness Report data and Starbucks Worldwide Location data, I wanted to see if Starbucks stores in certain countries have correlation to their happiness and GDP. Do richer or happier countries have more Starbucks? What about healthy life expectancy scores or freedom scores? Along with happiness score, I analyzed the effect of number of Starbucks on GDP, healthy life expectancy score, and freedom to make life choices score to discover interesting correlations.</p>
 
-         <h3>Data Sources</h3>
-         <ol>
-            <li>The World Happiness Report data came from Wikipedia. There are two big tables on the page from 2017 and 2018. I only used the 2018 report. I fetched the data using requests.get and parsed the HTML page using BeautifulSoup. The table used ‘find’ and ‘find_all’ to locate the first table and was loaded into Pandas Dataframe. The columns were assigned to variable ‘headers,’ which was scraped using .getText method. The data rows were also scraped the same way, first put into a temporary list and then to a Dataframe. The table contained 155 countries that made it to the world happiness report and their information about overall rank, happiness score, GDP per capita, healthy life expectancy, freedom, social support, and etc.</li>
-            <li>The Starbucks worldwide location data was found in a CSV file that I downloaded from Kaggle. This data was scraped from Starbucks store locator webpage by Github user chrismeller. It has over 26,000 retail stores in 70 countries. It contains information about the store number, store name, street address, country code, postcode, phone number, time zone, longitude, and latitude. This data was last updated a year ago, so it was recent enough to do my analysis.</li>
-         </ol>
+        <h3>Data Sources</h3>
+        <div class="container">
+            <div>
+                <div class="center">
+                    <img class="icon" src="images/earth-globe.png" alt="earth" />
+                </div>
+                <p>The World Happiness Report data came from Wikipedia. I fetched the data using requests.get and parsed the HTML page using BeautifulSoup. The table contained 155 countries that made it to the world happiness report and their information about overall rank, happiness score, GDP per capita, healthy life expectancy, freedom, social support, and etc.</p>
+            </div>
+            <div>
+                <div class="center">
+                    <img class="icon" src="images/coffee.png" alt="coffee" />
+                </div>
+                <p>The Starbucks worldwide location data was found in a CSV file that I downloaded from Kaggle. This data was scraped from Starbucks store locator webpage by Github user chrismeller. It has over 26,000 retail stores in 70 countries. It contains information about the store number, store name, street address, country code, postcode, phone number, time zone, longitude, and latitude.</p>
+            </div>
+        </div>
+        <h3>Methods</h3>
 
-         <h3>Methods</h3>
+        <h4>Country Names</h4>
+        <p>The country names from the table were used as my primary key to join with the other table. All country name strings had the characters ‘\xa0’ in front of the name of the country. To clean this up, I sliced the string by taking the second character and the rest of the string and for loop through all country names. This was a challenge because string that needed to be eliminated was four characters long but I only had to slice the first one for the cleaning. It also only showed up when I did ‘.values’ and did not show up when the just the HTML or the data frame were printed, so it was difficult to tell where the error kept occurring.</p>
 
-         <h4>Country Names</h4>
-         <p>The country names from the table were used as my primary key to join with the other table. All country name strings had the characters ‘\xa0’ in front of the name of the country. To clean this up, I sliced the string by taking the second character and the rest of the string and for loop through all country names. This was a challenge because string that needed to be eliminated was four characters long but I only had to slice the first one for the cleaning. It also only showed up when I did ‘.values’ and did not show up when the just the HTML or the data frame were printed, so it was difficult to tell where the error kept occurring.</p>
+        <h4>Cleaning by country code</h4>
+        <p>Then I read the CSV file “directory 2.csv,” which contained all the Starbucks Locations Worldwide data to load it into Pandas Dataframe. Next I counted how many Starbucks each country had using ‘.value_counts()’ and assigned it to the variable ‘count.’ I also did ‘.reset_index()’ in order to make the count dataframe its own dataframe with its own index. Because the country in the Starbucks dataframe were assigned by country codes instead of country names, I had to find a dictionary of the ISO country short codes, where the key is the two digit code and the value is country name. I copied and pasted this dictionary from a question asked on stackoverflow. Then I used the ‘.replace()’ and ‘.rename()’ methods to replace all the two digit country codes into country names in order to join the two information on the same table by the country name.</p>
 
-         <h4>Cleaning by country code</h4>
-         <p>Then I read the CSV file “directory 2.csv,” which contained all the Starbucks Locations Worldwide data to load it into Pandas Dataframe. Next I counted how many Starbucks each country had using ‘.value_counts()’ and assigned it to the variable ‘count.’ I also did ‘.reset_index()’ in order to make the count dataframe its own dataframe with its own index. Because the country in the Starbucks dataframe were assigned by country codes instead of country names, I had to find a dictionary of the ISO country short codes, where the key is the two digit code and the value is country name. I copied and pasted this dictionary from a question asked on stackoverflow. Then I used the ‘.replace()’ and ‘.rename()’ methods to replace all the two digit country codes into country names in order to join the two information on the same table by the country name.</p>
+        <h4>Merging datasets</h4>
+        <p>Next I merged the count dataframe and the big dataframe of all the world happiness report using outer method and assigned it to variable ‘joined.’ I used outer method in order to keep the countries that did not have Starbucks. Only about 70 countries have Starbucks and there are 156 countries that made it to the World Happiness Report. By using the outer method, I kept all the missing data, filing in ‘NaN’ for Haemin Lee (haelee) SI 330 Final Project those countries with no Starbucks locations. Additionally, I made another variable ‘starbucks’ and assigned that to the same two dataframes merging but using the right method. I used the right method so that the World Happiness Report would merge only if they had a Starbucks. I made two merged tables to make a comparison between the correlations of those with Starbucks and those do not. This was challenging because I had to try different join and merge methods to find the one that works for my data.</p>
 
-         <h4>Merging datasets</h4>
-         <p>Next I merged the count dataframe and the big dataframe of all the world happiness report using outer method and assigned it to variable ‘joined.’ I used outer method in order to keep the countries that did not have Starbucks. Only about 70 countries have Starbucks and there are 156 countries that made it to the World Happiness Report. By using the outer method, I kept all the missing data, filing in ‘NaN’ for Haemin Lee (haelee) SI 330 Final Project those countries with no Starbucks locations. Additionally, I made another variable ‘starbucks’ and assigned that to the same two dataframes merging but using the right method. I used the right method so that the World Happiness Report would merge only if they had a Starbucks. I made two merged tables to make a comparison between the correlations of those with Starbucks and those do not. This was challenging because I had to try different join and merge methods to find the one that works for my data.</p>
+        <h3>Analysis and Visualization</h3>
+        <p>Before I performed my visualization, I decided to drop the outliers in order to find a better correlation. Because Starbucks is an American corporation, United States had way more locations (13,608) than any other countries in the world. The second most Starbucks location was in China (2,734), but it was still around fifth of United States. It made sense to eliminate the outliers in my data by selecting only those under 500 Starbucks locations. The countries that are large in land and in population are bound to have more Starbucks due to the proportion.</p>
+        <div class="shrink">
+            <img class="shrink" src="images/dataviz.png" alt="starbucks chart" />
+        </div>
 
+        <p>After dropping the outliers, I visualized the ‘starbucks’ dataframe, which was right merged to the ‘count’ dataframe. The bubble plot above shows the relationship of Happiness Score and the GDP per capita, where the size of the bubbles represent the amount of Starbucks locations. The larger the bubbles are, the more Starbucks locations the countries have.This visualization was made because when the size of the bubble represented the GDP, the bubbles barely had any noticeable difference. The GDP was not as diverse among the countries that had Starbucks. But it was interesting to see if larger bubbles were surrounded in a certain part of the graph. The larger bubbles are mostly existent in the 5.0 to 6.5 range of the Happiness Score. However, I needed more analysis to see if this correlation was accurate.</p>
+        <div class="graphs">
+            <div><img src="images/starfreedom.png" alt="freedom" /></div>
+            <div><img src="images/stargdp.png" alt="gdp" /></div>
+            <div><img src="images/starhappiness.png" alt="happiness" /></div>
+            <div><img src="images/starlife.png" alt="life" /></div>
+        </div>
+        <p>The four scatter plots shown above portrays the number of Starbucks locations on the y-axis. In clockwise starting on the top left respectively shows Happiness Score, GDP per capita, Healthy Life Expectancy, and Freedom Score on the x-axis. Each scatter represents a country. As shown on the plot, there are no significant correlations on any of them. There could be a weak positive correlation if the countries with less than 50 Starbucks locations are eliminated for Healthy Life Expectancy and Freedom Score. But there are no significant correlation for Happiness Score and GDP per capita, because the countries with more than 200 Starbucks locations are showing negative linear relationship whereas countries with 50 to 200 locations are showing positive linear relationship. The majority of the countries have less than 50 locations however, and they do not show any apparent correlation with the 4 scores shown above.</p>
+        <div class="shrink">
+            <img src="images/starviz.png" alt="star viz" />
+        </div>
 
-         <h3>Analysis and Visualization</h3>
-         <p>Before I performed my visualization, I decided to drop the outliers in order to find a better correlation. Because Starbucks is an American corporation, United States had way more locations (13,608) than any other countries in the world. The second most Starbucks location was in China (2,734), but it was still around fifth of United States. It made sense to eliminate the outliers in my data by selecting only those under 500 Starbucks locations. The countries that are large in land and in population are bound to have more Starbucks due to the proportion.</p>
-         <div class="shrink">
-         <img class="shrink" src="images/dataviz.png" alt = "starbucks chart"/>
-       </div>
+        <p>The visualization shown above is a pairplot of number of starbucks and the 4 scores: Happiness Score, GDP per capita, Healthy Life Expectancy, and Freedom Score. I treated number of Starbucks location as another “score” that can be correlated to other scores that I made analysis on. The outcomes are color coordinated based on the number of Starbucks locations. It was interesting to see that the colors mixed up in no significant pattern in all of the pairplots excluding the number of Starbucks locations. Each dot represents a country and the legend on the right shows each country by the number of Starbucks locations. Overall, it was disappointing to see that there weren’t any apparent correlation to Starbucks locations and the World Happiness Report data, but it was pleasing to see the correlations within the Happiness Report with different scores. For example, the Happiness Score is positively strongly correlated with the GDP per capita, Healthy life expectancy, and Freedom score.</p>
+        <p>If I were to do this project again, I would like to focus on a certain range of number of Starbucks in order to see if those have correlations. Instead of using the country name as the joining pair, I could have also used the ISO country codes to match up the the dataframes for better accuracy. I do not think any country was left out because there were about 70 countries with Starbucks. The merging process also did not need to be as time consuming if I knew which part was continuing to cause me errors. Naming the columns distinctly is essential when joining or merging two tables to show the exact data that I want. It would also have been interesting to play with other parts of the CSV file such as the address to locate each of them on a global map and visualize that in an interactive way where the viewers could search for the Starbucks they want to see if it is existent in the country. I would also like to analyze different worldwide corporations around the world to see if the business has an affect on the countries overall happiness.</p>
+        <br>
+        <footer>
+            <div class="container">
+                <div>
+                    <h2>Previous</h2>
+                    <div class="projects">
+                        <a href="unicorn.html">Unicorn Bubbles</a>
+                    </div>
+                </div>
 
-         <p>After dropping the outliers, I visualized the ‘starbucks’ dataframe, which was right merged to the ‘count’ dataframe. The bubble plot above shows the relationship of Happiness Score and the GDP per capita, where the size of the bubbles represent the amount of Starbucks locations. The larger the bubbles are, the more Starbucks locations the countries have.This visualization was made because when the size of the bubble represented the GDP, the bubbles barely had any noticeable difference. The GDP was not as diverse among the countries that had Starbucks. But it was interesting to see if larger bubbles were surrounded in a certain part of the graph. The larger bubbles are mostly existent in the 5.0 to 6.5 range of the Happiness Score. However, I needed more analysis to see if this correlation was accurate.</p>
-         <div class="graphs">
-           <div><img src="images/starfreedom.png" alt = "freedom"/></div>
-           <div><img src="images/stargdp.png" alt = "gdp"/></div>
-           <div><img src="images/starhappiness.png" alt = "happiness"/></div>
-           <div><img src="images/starlife.png" alt = "life"/></div>
-         </div>
-         <p>The four scatter plots shown above portrays the number of Starbucks locations on the y-axis. In clockwise starting on the top left respectively shows Happiness Score, GDP per capita, Healthy Life Expectancy, and Freedom Score on the x-axis. Each scatter represents a country. As shown on the plot, there are no significant correlations on any of them. There could be a weak positive correlation if the countries with less than 50 Starbucks locations are eliminated for Healthy Life Expectancy and Freedom Score. But there are no significant correlation for Happiness Score and GDP per capita, because the countries with more than 200 Starbucks locations are showing negative linear relationship whereas countries with 50 to 200 locations are showing positive linear relationship. The majority of the countries have less than 50 locations however, and they do not show any apparent correlation with the 4 scores shown above.</p>
-         <div class="shrink">
-         <img src="images/starviz.png" alt = "star viz"/>
-       </div>
+                <div>
+                    <h2>Up Next</h2>
+                    <div class="projects">
+                        <a href="umsi.html">UMSI Courses</a>
+                    </div>
 
-         <p>The visualization shown above is a pairplot of number of starbucks and the 4 scores: Happiness Score, GDP per capita, Healthy Life Expectancy, and Freedom Score. I treated number of Starbucks location as another “score” that can be correlated to other scores that I made analysis on. The outcomes are color coordinated based on the number of Starbucks locations. It was interesting to see that the colors mixed up in no significant pattern in all of the pairplots excluding the number of Starbucks locations. Each dot represents a country and the legend on the right shows each country by the number of Starbucks locations. Overall, it was disappointing to see that there weren’t any apparent correlation to Starbucks locations and the World Happiness Report data, but it was pleasing to see the correlations within the Happiness Report with different scores. For example, the Happiness Score is positively strongly correlated with the GDP per capita, Healthy life expectancy, and Freedom score.</p>
-         <p>If I were to do this project again, I would like to focus on a certain range of number of Starbucks in order to see if those have correlations. Instead of using the country name as the joining pair, I could have also used the ISO country codes to match up the the dataframes for better accuracy. I do not think any country was left out because there were about 70 countries with Starbucks. The merging process also did not need to be as time consuming if I knew which part was continuing to cause me errors. Naming the columns distinctly is essential when joining or merging two tables to show the exact data that I want. It would also have been interesting to play with other parts of the CSV file such as the address to locate each of them on a global map and visualize that in an interactive way where the viewers could search for the Starbucks they want to see if it is existent in the country. I would also like to analyze different worldwide corporations around the world to see if the business has an affect on the countries overall happiness.</p>
-         <br>
-         <footer>
-           <h2>Next Project</h2>
-           <div class="projects">
+                </div>
+            </div>
 
-           <!-- <a href="unicorn.html">Unicorn Bubbles</a> -->
-           <!-- <a href="starbucks.html">Starbucks & Happiness</a> -->
-           <a href="umsi.html">UMSI Courses</a>
-         </div>
-         <br>
-           <a href="mailto:haelee@umich.edu"><i class="far fa-envelope"></i></a>
-           <a href="https://www.linkedin.com/in/jennyhaeminlee"><i class="fab fa-linkedin-in"></i></a>
-           <a href="https://instagram.com/amangoslime"><i class="fab fa-instagram"></i></a>
+            <br>
+            <a href="mailto:haelee@umich.edu"><i class="far fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/jennyhaeminlee"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/amangoslime"><i class="fab fa-instagram"></i></a>
             <p>last updated February 2019</p>
-         </footer>
-      </main>
-   </body>
+        </footer>
+    </main>
+</body>
+
 </html>
