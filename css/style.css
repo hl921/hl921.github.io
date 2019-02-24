@@ -132,22 +132,16 @@ body{
      height: 100%;
 }
  .desc-main{
-     font-family: "Muli";
      font-weight: bold;
-     text-align: center;
-     font-size: 80%;
-     padding: 10%;
+     font-size: .5em;
+     text-align: left;
+     /* padding: 5%; */
      background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
      -webkit-background-clip:text;
      -webkit-text-fill-color: transparent;
 }
- .desc-main p{
-     font-size: 200%;
-     font-weight: bold;
-}
-.desc-main h1{
-    font-size: 180%;
-    font-weight: bold;
+.desc-main p{
+  font-size: 3em;
 }
  .desc {
     /* font-size: 150%;
@@ -385,19 +379,15 @@ body{
          */
     }
      .desc-main{
-         font-family: "Muli";
          font-weight: bold;
-         font-size: 90%;
-         text-align: center;
-         padding: 10%;
+         font-size: 100%;
+         text-align: left;
+         padding: 5%;
          background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
          -webkit-background-clip:text;
          -webkit-text-fill-color: transparent;
     }
-     .desc-main p{
-         font-size: 300%;
-         font-weight: bold;
-    }
+
 }
  @media screen and (min-device-width:1000px) and (min-width:1000px){
      .unicorn video{
@@ -535,7 +525,6 @@ body{
          text-align: left;
     }
      .desc-main{
-         font-family: "Muli";
          font-size: 100%;
          font-weight: bold;
          text-align: center;
