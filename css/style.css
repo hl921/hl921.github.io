@@ -42,13 +42,7 @@ body{
   filter: grayscale(0%);
 }
 
-.spotify{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items:center;
-  padding-left: 10%;
-  padding-right: 3%;
-}
+
 
 
  .skip {
@@ -510,6 +504,13 @@ nav li a:hover{
 
 
 @media screen and (min-device-width:700px) and (min-width:700px) and (max-width:1000px){
+  .spotify{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items:center;
+    padding-left: 10%;
+    padding-right: 3%;
+  }
 
    .arts {
      display: grid;
@@ -585,6 +586,13 @@ nav li a:hover{
 
 }
  @media screen and (min-device-width:1000px) and (min-width:1000px){
+   .spotify{
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     align-items:center;
+     padding-left: 10%;
+     padding-right: 3%;
+   }
 
     .arts {
       display: grid;
