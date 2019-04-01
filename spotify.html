@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Spotify Home</title>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to Content</a>
+    <header>
+      <nav>
+              <ul>
+                          <li><a href="about.html">About</a></li>
+                  <li><a href="art.html">Art</a></li>
+                  <li><a class="current" href="index.html">Work</a></li>
+              </ul>
+      </nav>
+    </header>
+    <br>
+    <main id="main">
+        <br>
+            <img src="images/spotify.jpg" alt="spotify" />
+        <div>
+            <h1>Spotify Home 🎧</h1>
+            <h2>Mobile App UX Case Study</h2>
+            <br>
+            <p>Spotify is a Swedish online music streaming service. The app provides ability to listen to music, explore new music, and add music to library. Our team analyzed the UX problems for the Spotify home panel on the mobile application. Then we came up with a mock up solution that we believed was more suitable.</p>
+
+
+        <h3>Overview</h3>
+
+        <p> We felt that the home panel is mainly <a class="gradient-text">confusing and difficult to navigate</a> and also <a class="gradient-text">cluttered and overwhelming</a>. Below is the list of problems that we each identified the implications and recommendations for.</p>
+
+
+        <ol>
+          <li>Your Library is not the Home Page</li>
+          <li>Consistency and hierarchical issues</li>
+          <li>Playlists are presented at random</li>
+          <li>Swiping Vertical and Horizontal Navigation</li>
+          <li>Redundant playlist title</li>
+          <li>Now Playing bar </li>
+          <li>Delete song feature</li>
+          <li>Does not consider user's intent</li>
+        </ol>
+
+        <p>For each problem listed above, we completed a full UX analysis and evaluation on every part of the home page. We broke them down into specific problem areas, implications, and recommendations. These evaluations are backed up by UX design principles and Human Computer Interaction theories.</p>
+
+        <h4>1. Your Library is not the Home Page 📚</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp1.png" alt="sp1" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>Home Page is launched initially by default. There are too many salient elements: warm, colorful album covers and large and bright artwork.</p>
+            <h5>Implication</h5>
+            <p>Users expect to be brought to their music library immediately; bringing them to the Home Page contradicts this <a class="gradient-text">mental model</a>. (Weinschenk. 100 Things Every Designer Needs to Know About People, p. 72-73). This also fails users’ <a class="gradient-text">gulf of execution</a>. Users actually have to exert more effort to sift through stimuli to execute their goal of getting to “My Library.” (Norman, D. The Design of Everyday Things, p. 39.)</p>
+            <h5>Recommendation</h5>
+            <p>Create a Home Page that considers users’ goals and mental models. Focus on <a class="gradient-text">Goal-Directed-Attention</a> elements,  rather than the current <a class="gradient-text">Stimulus-Directed Attention</a> driven design.</p>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <h4>2. Consistency and Hierarchical Issues</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp2.png" alt="sp2" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>Various <a class="gradient-text">consistency</a> issues: headings do not follow hierarchical conventions. Header 1 is smaller than header 2; headers conventionally decrease in size and salience as we progress down a page. Some titles have descriptions, some do not.</p>
+            <h5>Implication</h5>
+            <p>The inconsistency of the headings and descriptions spoil advantages of properly executed <a class="gradient-text">visual hierarchy</a>. The lack of consistency and convention diminishes users’ ability to effectively scan and understand the page.</p>
+            <h5>Recommendation</h5>
+            <p>Remove or add descriptions to all of the titles to keep consistency. Make sure higher up headings are larger than lower ones.
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h4>3. Playlists are Presented at Random</h4>
+        <br>
+        <div class="spotify">
+          <div class="shrink">
+            <img src="images/sp3.png" alt="sp3"/>
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>There are 11 sections and 8+ items in each (except 2 sections). Most items are not organized in any noticeable pattern. Horizontal sections exists inside the vertical structure</p>
+            <h5>Implication</h5>
+            <p>Each section not being located in a particular area can make it time-consuming for goal-directed users (i.e. looking for a specific song). <a class="gradient-text">Hick-Hyman Law</a> points out that more items, the more time spent. Also, when menu items are organized not meaningfully, a sequenced menu is the fastest. (Ritter. Foundations for Designing User-Centered Systems: What System Designers Need to Know about People, p. 185)</p>
+            <h5>Recommendation</h5>
+            <p>Restructure to sequenced menus and organize sections in a meaningful order such as alphabetical or the number of followers.</p>
+          </div>
+        </div>
+<br>
+<br>
+        <h4>4. Swiping Vertical and Horizontal Navigation</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp4.png" alt="sp4" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>The vertical and horizontal navigation in each section and item based on swiping <a class="gradient-text">diectic reference</a> is poor. <a class="gradient-text">Haptic perception</a> is prone to error especially when applying two different directions of input consecutively (Ritter. Foundations for Designing User-Centered Systems: What System Designers Need to Know about People, p. 65).</p>
+            <h5>Implication</h5>
+            <p>All movement must completely stop before applying gesture input of a different direction.
+This problem is a counterexample of <a class="gradient-text">Accot-Zhai Steering Law</a> (NAN. Understanding the Science Aspect in Interaction Design – a Summary of “Laws” in the Field, p. 2-3). Path is too wide, interferes with other elements.</p>
+            <h5>Recommendation</h5>
+            <p>Restrain gesture input to a certain area by adding sroll bars. Restructure architecture to rely less on both horizontal and vertical touch. Restructure to sequenced menus</p>
+          </div>
+        </div>
+
+<br>
+<br>
+        <h4>5. Redundant Playlist Title</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp5.png" alt="sp5" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>Title of the playlist is on image of the playlist cover as well as below the image. Redundancy is unnecessary for the users as it takes up more space and takes away attention. </p>
+            <h5>Implication</h5>
+            <p> There is information overload which requires <a class="gradient-text">focused attention</a> to find items of interest. Excessive stimuli compete for limited attention resources.
+</p>
+            <h5>Recommendation</h5>
+            <p> Show the playlist title only once and keep the titles simple.</p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h4>6. Now Playing Bar </h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp6.png" alt="sp6" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p>It is unclear on how to swipe back and forth on the now playing bar. The width of the now playing bar makes it harder for users to figure out that it is swipeable. </p>
+            <h5>Implication</h5>
+            <p>This is lack of <a class="gradient-text">affordance</a>. Use of <a class="gradient-text">strong conventions</a> rather than gestures would be easier for users.</p>
+            <h5>Recommendation</h5>
+            <p>Buttons to go back and forth the songs could be minimized and shown on the bar. <a class="gradient-text">Learning by example</a> — quick tutorial that demonstrates use. </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h4>7. Delete Song Feature</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp7.png" alt="sp7" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p> There is no feature to delete multiple songs and restricted in deleting multiple songs. Also too much effort is needed to delete a song.</p>
+            <h5>Implication</h5>
+            <p><a class="gradient-text">Constraints</a> on norms. Should be unspoken or required feature. Does not use <a class="gradient-text">touch gesture conventions</a>.
+ </p>
+            <h5>Recommendation</h5>
+            <p> To delete a specific song, swiping left should be enough. To delete multiple songs, touch/hold song for a pop-up menu that has the options to “Delete Selected Songs” and “Delete All Songs."
+</p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h4>8. Does not consider user's intent</h4>
+        <br>
+        <div class="spotify">
+          <div>
+            <img src="images/sp8.png" alt="sp8" />
+          </div>
+          <div>
+            <h5>Problem</h5>
+            <p> Spotify doesn’t consider user’s goals, which is a form of <a class="gradient-text">top-down processing</a>. </p>
+            <h5>Implication</h5>
+            <p><a class="gradient-text">Expectancy</a>: Consider what users expect to see. Spotify consider business goals over user goals.</p>
+            <p><a class="gradient-text">Value</a>: Consider what users deem important. “Recently Played” located in the middle of the page.</p>
+            <p><a class="gradient-text">Effort</a>: Consider user effort. Poor navigation/organization cluttered.</p>
+</p>
+            <h5>Recommendation</h5>
+            <p>Rearrange the Home page with user goals. Organize content in value hierarchy. Spacious and cleaner interface.
+
+</p>
+          </div>
+        </div>
+
+<br>
+<h3>Mock Up Solution</h3>
+
+<div class="container small">
+  <div class="shrink">
+  <img src="images/spbefore.png" alt="before" />
+  <p>Before</p>
+</div>
+  <div  class="shrink">
+  <img src="images/spafter.png" alt="after" />
+  <p>After</p>
+</div>
+</div>
+<h3>Takeaways</h3>
+<p>The home panel in the Spotify mobile app becomes impractical after a while for regular users. The browse panel has the same functions as the home panel but in a more organized and visually appealing way.
+We also noticed that Spotify likes to promote their own playlists more than user playlists, which prioritizes business goals over user goals.The home panel should essentially consist of the most relevant functions that are dependent on user’s needs as shown in the mock up.</p>
+
+<h3>Spotify Home in 2019 ✨</h3>
+<div class="spotify">
+
+
+<div class="shrink">
+<img src="images/2019spotify.jpeg" alt="2019" />
+    </div>
+    <div>
+  <p>This project was done in 2017. What does the Spotify home page look like in 2019? It looks much more cleaner and <a class="gradient-text">minimalistic</a>. We can see that the title "Home" up at the top is gone. Instead they added a nice subtle gradient. The "Recently Played" shows up right after "Your Heavy Rotation." This almost seems like a glorified version of "Your Library" now, which is good.</p>
+  <p>The five main menus at the bottom reduced to only <a class="gradient-text">three</a>, eliminating "Browse" and the "Radio" menu. I remember being confused to find the "Top 50" song list since the Browse menu has been deleted. But it does look much simpler this way. What do you guys think? I'm liking the new version much more.</p>
+  </div>
+
+</div>
+
+
+
+        <footer>
+           <div class="six-grid">
+             <div>
+                <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+                <p>ShareU</p>
+             </div>
+             <div>
+                <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
+                <p>Emergency Guidance</p>
+             </div>
+             <div>
+               <a href="spotify.html"><img id="cp" class="card" src="images/home/spotify.png" alt="spotify home" /></a>
+               <p class="gradient-text">Spotify Home </p>
+
+             </div>
+              <div>
+                 <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
+                 <p>UMSI Courses</p>
+              </div>
+              <div>
+                 <a href="unicorn.html"><img class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
+                 <p>Unicorn Bubbles</p>
+              </div>
+              <div>
+                <a href="starbucks.html"><img class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
+                <p>Starbucks & Happiness</p>
+              </div>
+           </div>
+           <br>
+           <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
+           <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
+           <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
+           <p>Designed & Coded with 💓   |  ©️ March 2019</p>
+        </footer>
+    </main>
+</body>
+
+</html>

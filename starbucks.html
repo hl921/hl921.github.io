@@ -14,20 +14,13 @@
 <body>
     <a class="skip" href="#main">Skip to Content</a>
     <header>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <li><a href="index.html">Jenny Lee</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                      <li><a href="art.html">Art</a></li>
-                    <li><a class="current" href="index.html">Work</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+              <ul>
+                      <li><a href="about.html">About</a></li>
+                  <li><a href="art.html">Art</a></li>
+                  <li><a class="current" href="index.html">Work</a></li>
+              </ul>
+      </nav>
     </header>
     <br>
     <main id="main">
@@ -39,13 +32,13 @@
             <p>I explored the idea of the correlation between worldwide Starbucks locations and the country’s happiness score. The company has over 26,000 locations worldwide.</p>
         </div>
         <div class="center">
-            <a class="button" href="Starbucks+and+Happiness.html">View Code</a>
+            <a id="button" href="docs/Starbucks+and+Happiness.html">View Code</a>
         </div>
         <h3>Motivation</h3>
         <p>Starbucks makes me and its customers happy. Could it be possible for the biggest coffee house chain in the world to affect the happiness of countries around the world? I wanted to analyze this inquiry on a worldwide scale. By manipulating World Happiness Report data and Starbucks Worldwide Location data, I wanted to see if Starbucks stores in certain countries have correlation to their happiness and GDP. Do richer or happier countries have more Starbucks? What about healthy life expectancy scores or freedom scores? Along with happiness score, I analyzed the effect of number of Starbucks on GDP, healthy life expectancy score, and freedom to make life choices score to discover interesting correlations.</p>
 
         <h3>Data Sources</h3>
-        <div class="container">
+        <div class="scenario">
             <div>
                 <div class="center">
                     <img class="icon" src="images/earth-globe.png" alt="earth" />
@@ -72,12 +65,12 @@
 
         <h3>Analysis and Visualization</h3>
         <p>Before I performed my visualization, I decided to drop the outliers in order to find a better correlation. Because Starbucks is an American corporation, United States had way more locations (13,608) than any other countries in the world. The second most Starbucks location was in China (2,734), but it was still around fifth of United States. It made sense to eliminate the outliers in my data by selecting only those under 500 Starbucks locations. The countries that are large in land and in population are bound to have more Starbucks due to the proportion.</p>
-        <div class="shrink">
-            <img class="shrink" src="images/dataviz.png" alt="starbucks chart" />
+        <div class="small">
+            <img src="images/dataviz.png" alt="starbucks chart" />
         </div>
 
         <p>After dropping the outliers, I visualized the ‘starbucks’ dataframe, which was right merged to the ‘count’ dataframe. The bubble plot above shows the relationship of Happiness Score and the GDP per capita, where the size of the bubbles represent the amount of Starbucks locations. The larger the bubbles are, the more Starbucks locations the countries have.This visualization was made because when the size of the bubble represented the GDP, the bubbles barely had any noticeable difference. The GDP was not as diverse among the countries that had Starbucks. But it was interesting to see if larger bubbles were surrounded in a certain part of the graph. The larger bubbles are mostly existent in the 5.0 to 6.5 range of the Happiness Score. However, I needed more analysis to see if this correlation was accurate.</p>
-        <div class="graphs">
+        <div class="graphs shrink">
             <div><img src="images/starfreedom.png" alt="freedom" /></div>
             <div><img src="images/stargdp.png" alt="gdp" /></div>
             <div><img src="images/starhappiness.png" alt="happiness" /></div>
@@ -92,28 +85,38 @@
         <p>If I were to do this project again, I would like to focus on a certain range of number of Starbucks in order to see if those have correlations. Instead of using the country name as the joining pair, I could have also used the ISO country codes to match up the the dataframes for better accuracy. I do not think any country was left out because there were about 70 countries with Starbucks. The merging process also did not need to be as time consuming if I knew which part was continuing to cause me errors. Naming the columns distinctly is essential when joining or merging two tables to show the exact data that I want. It would also have been interesting to play with other parts of the CSV file such as the address to locate each of them on a global map and visualize that in an interactive way where the viewers could search for the Starbucks they want to see if it is existent in the country. I would also like to analyze different worldwide corporations around the world to see if the business has an affect on the countries overall happiness.</p>
         <br>
         <footer>
-            <div class="container">
-                <div>
-                    <h2>Previous</h2>
-                    <div class="projects">
-                        <a href="unicorn.html">Unicorn Bubbles</a>
-                    </div>
-                </div>
+           <div class="six-grid">
+              <div>
+                 <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+                 <p>ShareU</p>
+              </div>
+              <div>
+                 <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
+                 <p>Emergency Guidance</p>
+              </div>
+              <div>
+                <a href="spotify.html"><img class="card" src="images/home/spotify.png" alt="spotify home" /></a>
+                <p>Spotify Home</p>
+              </div>
+              <div>
+                 <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
+                 <p>UMSI Courses</p>
+              </div>
+              <div>
+                 <a href="unicorn.html"><img class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
+                 <p>Unicorn Bubbles</p>
+              </div>
+              <div>
+                <a href="starbucks.html"><img id="cp" class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
+                <p class="gradient-text">Starbucks & Happiness</p>
 
-                <div>
-                    <h2>Up Next</h2>
-                    <div class="projects">
-                        <a href="umsi.html">UMSI Courses</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <br>
-            <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
-            <p>Last updated Feb 2019</p>
+              </div>
+           </div>
+           <br>
+           <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
+           <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
+           <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
+           <p>Designed & Coded with 💓   |  ©️ March 2019</p>
         </footer>
     </main>
 </body>

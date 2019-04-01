@@ -1,190 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <title>ShareU</title>
+   </head>
+   <body class="purple">
+      <a class="skip" href="#main">Skip to Content</a>
+      <header>
+         <nav>
+            <ul>
+                    <li><a href="about.html">About</a></li>
+               <li><a href="art.html">Art</a></li>
+               <li><a class="current" href="index.html">Work</a></li>
+            </ul>
+         </nav>
+      </header>
+      <br>
+      <main id="main">
+         <br>
+         <img src="images/poster.png" alt="poster" />
+         <h1>ShareU</h1>
 
-<head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>ShareU</title>
-</head>
-
-<body class="purple">
-    <a class="skip" href="#main">Skip to Content</a>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <li><a href="index.html">Jenny Lee</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                      <li><a href="art.html">Art</a></li>
-                    <li><a class="current" href="index.html">Work</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <br>
-    <main id="main">
-        <br>
-        <img src="images/poster.png" alt="poster" />
-        <h1>ShareU</h1>
-        <!-- <a class="button" href = "#prototype">SKIP TO PROTOTYPE</a> -->
-
-        <h2>College 101: How to stay in the information loop</h2>
-        <br>
-        <p>ShareU provides a solution for difficulty spreading information on campus for university students. Our app organizes information such as events, clubs, tickets, textbooks, housing to verified students in one centralized platform. Not only can students sell and exchange items, but they can learn about events and clubs and become more involved in their campus community.</p>
-        <div class="center">
-            <a class="button" href="#prototype">Skip to Prototype</a>
-        </div>
-
-        <h3>Research</h3>
-        <p>We started with competitive analysis based on our design problem statement: "There is difficulty spreading information about new clubs on campus, club information sessions, events, fundraisers, resources, etc. Additionally, if you wanted sell a textbook or a football ticket, there is no platform that exists to express or post this information." We took a critical look at existing systems within our context and articulated what their deficiencies are in respect to supporting our target activity. We complied a list of problems of current solutions to our problem.</p>
-        <div class="center">
+         <h2>College 101: How to stay in the information loop</h2>
+         <br>
+         <div class="center">
+            <a id="button" href="#prototype">Skip to Prototype</a>
+         </div>
+         <h3>The Problem</h3>
+         <p>One of the issues that exist within college communities is the <a class="gradient-text">difficulty of spreading information</a>. We have experienced this first hand, especially being apart of such a large college community. For example, there is difficulty spreading information about new clubs on campus, club information sessions, events, fundraisers, resources, etc.</p>
+         <p>If you wanted to sell a textbook or a football ticket, Facebook Group is the main platform used to post about college events or information. Facebook has, for example, “Class of 2019” group, and each grade belongs to their class Facebook group. So, if someone wanted to post about a fundraiser or the couch they’re selling, they would post within their class group. This limits Facebook users to see only what is being posted within their grade. Additionally, a lot of students don’t have Facebook. The Facebook group isn’t designed in categories so if you check it, it’s just a <a class="gradient-text">jumble of information</a>. </p>
+         <p>Other than Facebook, flyers are used to spread information, which seems to be very old-school and inconvenient. There is an app that exists within communities called “Nextdoor” but doesn’t exist on college campuses. The app allows people to post about different things and then you can search within categories. It would be interesting to see a college version of the app on campuses and would be very useful. Ultimately, it is <a class="gradient-text">difficult to be involved on campus</a> sometimes because of the lack of knowledge and I believe a platform to address this issue could be beneficial.</p>
+         <h3>Competitive Analysis</h3>
+         <p>We started with a competitive analysis based on our design problem statement. We took a critical look at existing systems within our context and articulated what their deficiencies are with respect to supporting our target activity. We compiled a list of problems with the current solutions to our problem.</p>
+         <p>Our current design space deals with the lack of an online platform that is specifically catered to the purpose of communication within the community that reflects the entire offline campus space, such as posting events, trading used goods. The current competitors do not reflect user needs completely. Some tools were targeted towards a different audience, while others were created with a different purpose in mind. To understand how these competitors are approaching the current design space, we decided to look at 7 different competitors on five factors.</p>
+         <div class="center shrink">
             <img class="ca" src="images/shareuca.png" alt="competitive analysis" />
-        </div>
-        <p>Our current design space deals with the lack of an online platform that is specifically catered to the purpose of communication within the community that reflects the entire offline campus space, such as posting events, trading used goods. The current competitors do not reflect user needs completely. Some tools were targeted towards a different audience, while others were created with a different purpose in mind. To understand how these competitors are approaching the current design space, we decided to look at 7 different competitors on five factors.</p>
-        <p>The comparative analysis helped us understand how the other online “bulletin board” platforms are working in place. It gave us not only ideas on how to approach our solution but also what to not include in our solution. We also realized that some of the factors were not the easiest to compare since these platforms were intended for a different audience. With this in mind, our group landed on some fundamental ideas on the structure of our design that is intended to create an online space for better communication for college students.</p>
-
-        <h3>Personas</h3>
-        <p>We developed 4 personas of sample users for our design. These were chosen to be particularly emblematic of the audiences we are targeting. To make them as useful as possible, we consider maximized the diversity of characteristics amongst the personas we developed, such that they are illustrative of a wide range of user needs,motivations, skill levels, etc. The last one was a negative persona.</p>
-
-        <div class="personas">
+         </div>
+         <p>The comparative analysis helped us understand how the other online “bulletin board” platforms are working in place. It gave us not only ideas on how to approach our solution but also what to not include in our solution. We also realized that some of the factors were not the easiest to compare since these platforms were intended for a different audience. With this in mind, our group landed on some fundamental ideas on the structure of our design that is intended to create an online space for better communication for college students.</p>
+         <h3>Personas</h3>
+         <p>We developed 4 personas of sample users for our design. These were chosen to be particularly emblematic of the audiences we are targeting. To make them as useful as possible, we consider maximizing the diversity of characteristics amongst the personas we developed, such that they are illustrative of a wide range of user needs, motivations, skill levels, etc. The last one was a negative persona.</p>
+         <div class="container">
             <div>
-                <img src="images/persona1.png" alt="persona1" />
+               <img src="images/persona1.png" alt="persona1" />
             </div>
             <div>
-                <img src="images/persona2.png" alt="persona2" />
+               <img src="images/persona2.png" alt="persona2" />
             </div>
             <div>
-                <img src="images/persona3.png" alt="persona3" />
+               <img src="images/persona3.png" alt="persona3" />
             </div>
             <div>
-                <img src="images/persona4.png" alt="persona4" />
+               <img src="images/persona4.png" alt="persona4" />
             </div>
-        </div>
-        <br>
-        <br>
-        <h3>Scenarios</h3>
-        <p>We picked one primary scenario and one secondary scenario to help our users to accomplish their goals/tasks with our solution.</p>
-        <div class="scenario">
+         </div>
+         <h3>Scenarios</h3>
+         <p>We picked one primary scenario and one secondary scenario to help our users to accomplish their goals/tasks with our solution.</p>
+         <div class="scenario">
             <div>
-                <h4>Scenario # 1</h4>
-                <p>Jon is a freshman from LA. He is both excited and nervous to start his life in college, but most importantly, he is looking forward to going to the football games. He wants to go to the game against MSU on October 20th, but doesn’t have a ticket yet. He opens ShareU and goes to the student buy and sell section. He is able to select the ‘football ticket’ category and the ‘MSU game’ tag to find all the offerings for the ticket. Then he sorts the offers by price, where he finds the cheapest ticket for $30. He clicks the seller’s profile and quickly scans it for any signs of scamming, and messages the seller to buy the ticket. Once the seller responds, he arranges to meet on campus to buy the ticket from him.</p>
+               <h4>Scenario # 1</h4>
+               <p>Jon is a freshman from LA. He is both excited and nervous to start his life in college, but most importantly, he is looking forward to going to the football games. He wants to go to the game against MSU on October 20th but doesn’t have a ticket yet. He opens ShareU and goes to the student buy and sell section. He is able to select the ‘football ticket’ category and the ‘MSU game’ tag to find all the offerings for the ticket. Then he sorts the offers by price, where he finds the cheapest ticket for $30. He clicks the seller’s profile and quickly scans it for any signs of scamming, and messages the seller to buy the ticket. Once the seller responds, he arranges to meet on campus to buy the ticket from him.</p>
             </div>
             <div>
-                <h4>Scenario # 2</h4>
-                <p>Mary Perry is a senior who recently moved from into a newly furnished apartment. Since the couch in her previous apartment was hers, she wants to get rid of it by selling it to another student on campus. She takes a picture of the couch and opens ShareU to make a post on the ‘buy and sell’ section. She makes a new post, selects the “furniture” category, uploads the picture, and writes a short description regarding its condition. She then adds the “couch” tag and submits the post. Now she will wait until another student sees the post and messages her about the offer.
-                </p>
+               <h4>Scenario # 2</h4>
+               <p>Mary Perry is a senior who recently moved from into a newly furnished apartment. Since the couch in her previous apartment was hers, she wants to get rid of it by selling it to another student on campus. She takes a picture of the couch and opens ShareU to make a post on the ‘buy and sell’ section. She makes a new post, selects the “furniture” category, uploads the picture, and writes a short description regarding its condition. She then adds the “couch” tag and submits the post. Now she will wait until another student sees the post and messages her about the offer.
+               </p>
             </div>
-        </div>
-
-        <h3>Alternative Sketches</h3>
-        <p>To think about different ways to solve the problem and to create storyboards, I created 40 different alternative sketches. It was difficult to come up with as many as 40 of them, but it allowed me to think outside of the box to come up with creative solutions.</p>
-        <img src="images/40sketches.png" alt="alternative sketches" />
-
-        <h3>Paper Prototype</h3>
-
-        <h4>First Attempt</h4>
-        <p>The video on the left shows our first version in stop motion. After conducting usability testing, we were able to improve our first version by considering the feedback and fixing our defects. Our participants had common suggestions as well as their personal comments to improve our prototype. All three usability tests went smoothly with the unique input from each participant. The third one went quicker than the first one because we got used to the process and adapted to the roles that we were assigned to. Here are some of our main defects and challenges:
-
-            <div class="video2">
-                <video width="400" controls autoplay loop src="videos/paperfirst.mov">
-                    <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
-                        <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
-                            Your browser does not support HTML5 video.
-                </video>
-
-                <video width="400" controls autoplay loop>
-                    <source src="videos/paperfinal.mp4" type="video/mp4">
-                    <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
-                        <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
-                            Your browser does not support HTML5 video.
-                </video>
+         </div>
+         <h3>Alternative Sketches</h3>
+         <p>To think about different ways to solve the problem and to create storyboards, I created 40 different alternative sketches. It was difficult to come up with as many as 40 of them, but it allowed me to think outside of the box to come up with creative solutions.</p>
+         <img src="images/40sketches.png" alt="alternative sketches" />
+         <h3>Storyboarding</h3>
+         <p>We visited our scenarios again and produced one storyboard for each scenario. We picked our favorite sketches from all team members and organized them into 2 storyboards that provide a visual narrative of the scenarios. This is also known as a narrative storyboard. The annotations help to see how the user's task would progress in response to their interactions.</p>
+         <h4>Scenario 1: Jon buys a football ticket online</h4>
+         <div class="shrink">
+            <img src="images/story1.png" alt="alternative sketches" />
+         </div>
+         <h4>Scenario 2: Mary sells couch online</h4>
+         <div class="shrink">
+            <img src="images/story2.png" alt="alternative sketches" />
+         </div>
+         <h3>Questions, Options, Criteria (QOC)</h3>
+         <p>Following the QOC approach (based on the MacLean et al. reading), we worked through the design considerations for our critical features. We produced a Design Space Analysis comprised of 3 QOC’s and considered the tradeoffs between different options, highlighted the preferred option we adopted, and explained the rationale for adopting it.</p>
+         <h4>Q1: How should categorical items be organized? </h4>
+         <div class="container">
+            <div class="shrink">
+               <img src="images/list.png" alt="q1" />
             </div>
-            <p>
-                We got great feedback on the interaction of the application and also the content issues that were confusing. From our first attempt, this version is more thorough and detailed. The replicating and filming process was also went smoother.
-            </p>
-
-            <h5>Categories to Tickets</h5>
-            <p>Our first defect was clicking the categories menu during the test. We originally made our users click on it to show them that they can access the categories by clicking the icon in the menu bar. However, we made the users press the back button instead of prompting to do anything more. We did not carry out our scenario fully. To fix this problem, we decided to add a “Tickets” feed that displays when the user presses the “Tickets” menu on the categories screen. This also helped us develop the interaction within our scenario, building the user story to first the user researching for a ticket to see the different prices, then to creating a post to sell a ticket. Another reason we need the “Tickets” screen is to show the users where the application transitions to once they submit a post about selling a ticket.</p>
-
-            <h5>Search Results</h5>
-            <p>Another missing part of our prototype was the “Search Results” page. The users could search for an item, but our prototype didn’t have a page that would show the search results. This lack of feedback confused our participants. To fix this issue, we created a page that contains their search results by the search terms. This was designed to be similar to the home screen with feeds, but the search terms would also be highlighted to indicate that the results contain that word. To distinguish the sort/filter icon from the categories icon, we changed the sort/filter icon to a funnel icon instead of a three horizontal lines.</p>
-            <h5>Minor defects</h5>
-            <p> One of the defects with minor severity was the missing badge icon for messages. We thought that when the user receives a message in their inbox, displaying a notification with a number that shows how many new messages they received would be helpful. We also got feedback that colors that we selected for certain functions were confusing. For example, if we were to select a different color for a button, we have to keep the color consistent throughout the whole application so that the color has a purpose. We moved away from this to create a more consistent design in terms of color coordination.</p>
-
-            <h3>Digital Prototype</h3>
-            <!-- <img src="images/shareuxdspec.png" alt = "shareu spec"/> -->
-
-            <div id="prototype" class="thirds">
-
-                <div id="uno" class="right-aligned">
-                    <h5>Home</h5>
-                    <p>Our main focus was the different representation of information depending on the categories.</p>
-                    <h5>Browse</h5>
-                    <p>We created 3 Browse screens to show different types of post for tickets, clubs, and events.</p>
-                    <h5>Post</h5>
-                    <p>We only created one type of post—Tickets—to emphasize the simple steps of creating a post. We focused on what information the users will require in buying/selling tickets online.</p>
-                </div>
-                <div id="dos">
-                    <h5>Inbox</h5>
-                    <p>We simplified the messaging feature as much as possible to have strong and straightforward affordance.</p>
-                    <h5>Profile</h5>
-                    <p>Profile has your own profile and other's profile. Users should have the option to hide their information from the public so we eliminated a few pieces of information but maintained the reviews and ratings for both profile screens. </p>
-                </div>
-                <div id="tres" class="video">
-                    <video class="image2" width="400" autoplay loop controls>
-                        <source src="videos/shareuproto.mp4" type="video/mp4">
-                        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
-                            <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
-                                Your browser does not support HTML5 video.
-                    </video>
-                </div>
+            <div class="shrink">
+               <img src="images/q1.png" alt="q1" />
+            </div>
+         </div>
+         <h5><a class="gradient-text">Option Selected: List</a></h5>
+         <p> We wanted to leverage this opportunity to solidify our navigational structure and overall
+            information architecture. Understanding this aspect of the application would set the basis for how users would navigate between each category. Our options included Lists, Grids (also referred to as
+            Dashboard-style), and Tabs. While these are all common conventions, we decided that Lists
+            would be the best option since it would take up little space while presenting items in an easily
+            readable manner. On the other hand, although Tabs did have more positives aspects, we
+            decided that higher interactivity - while it may potentially be a more engaging experience - may
+            also require more effort from the users. Therefore, we chose to avoid it and proceed with the
+            List option.
+         </p>
+         <h4>Q2: How should the navigational menus be displayed? </h4>
+         <div class="container">
+            <div class="shrink">
+               <img src="images/q22.png" alt="q1" />
+            </div>
+            <div class="shrink">
+               <img src="images/q2.png" alt="q1" />
+            </div>
+         </div>
+         <h5><a class="gradient-text">Option Selected: Toggle (Hamburger Menu)</a> 🍔</h5>
+         <p>We assessed two options through the QOC process: the Permanent Home Page and the Toggle option, or more specifically, the Hamburger Menu. The permanent would involve having a home page that users would navigate from. This would require users to navigate backward in order to access again. The Hamburger Menu would involve a button on the upper left corner of the screen that would make the list menu visible upon selection. We decided on Hamburger; having the categories on the home page may make it initially easy to access, but we thought that it would require more user effort in general as users would need to constantly need to move back and forth to navigate between categories. Another reason was that list option and Hamburger options are often combined as a convention, and we felt that this would users to easily understand how to navigate. As such, we chose to combine the List option with the Hamburger option.</p>
+         <h4>Q3: How should the search be integrated? </h4>
+         <div class="container">
+            <div class="shrink">
+               <img src="images/q33.png" alt="q1" />
+            </div>
+            <div class="shrink">
+               <img src="images/q3.png" alt="q1" />
+            </div>
+         </div>
+         <h5><a class="gradient-text">Option Selected: Search Icon</a></h5>
+         <p>Out of the two options of having the search icon only and having the actual search bar in place, we chose to select the search icon that displays a search bar on click. The search icon itself has a strong convention as it used a universal icon. The bar displaying after the click has the benefits of screen compactness and serves the same purpose of having a search bar at all times with just one click. The search bar would appear as the rest of the screen stays the same with a dim gray screen overlay to ensure to the users that this search icon does not take them to a new page but rather accessible anywhere in the app. The permanent search bar is easy access with less clicking for the users, but it takes up a lot of space on a relatively small screen we have for a mobile app.</p>
+         <h3>Paper Prototype</h3>
+         <h4>Two Attempts</h4>
+         <p>The video on the left shows our first version in stop motion. After conducting usability testing, we were able to improve our first version by considering the feedback and fixing our defects. Our participants had common suggestions as well as their personal comments to improve our prototype. All three usability tests went smoothly with the unique input from each participant. The third one went quicker than the first one because we got used to the process and adapted to the roles that we were assigned to. Here are some of our main defects and challenges:
+         <div class="video2">
+            <video width="400" controls autoplay loop src="videos/paperfirst.mov">
+               <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+               <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
+               Your browser does not support HTML5 video.
+            </video>
+            <video width="400" controls autoplay loop>
+               <source src="videos/paperfinal.mp4" type="video/mp4">
+               <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+               <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+         <p>
+            We got great feedback on the interaction of the application and also the content issues that were confusing. From our first attempt, this version is more thorough and detailed. The replicating and filming process was also went smoother.
+         </p>
+         <h5><a class="gradient-text">Categories > Tickets</a></h5>
+         <p>Our first defect was a missing subcategory screens within the categories menu. We originally made our users click on it to show them that they can access the categories by clicking the icon in the menu bar. However, we made the users press the back button instead of prompting to do anything more. To fix this problem, we decided to add a “Tickets” feed. This also helped us develop the interaction within our scenario, building the user story to first the user researching for a ticket to see the different prices, then to creating a post to sell a ticket.</p>
+         <h5><a class="gradient-text">Search Results</a></h5>
+         <p>Another missing part of our prototype was the “Search Results” page. The users could search for an item, but our prototype didn’t have a page that would show the search results. This lack of feedback confused our participants. To fix this issue, we created a page that contains their search results by the search terms. This was designed to be similar to the home screen with feeds, but the search terms would also be highlighted to indicate that the results contain that word. To distinguish the sort/filter icon from the categories icon, we changed the sort/filter icon to a funnel icon instead of three horizontal lines.</p>
+         <h5><a class="gradient-text">Minor defects</a></h5>
+         <p> One of the defects with minor severity was the missing badge icon for messages. We thought that when the user receives a message in their inbox, displaying a notification with a number that shows how many new messages they received would be helpful. We also got feedback that colors that we selected for certain functions were confusing. For example, if we were to select a different color for a button, we have to keep the color consistent throughout the whole application so that the color has a purpose. We moved away from this to create a more consistent design in terms of color coordination.</p>
+         <h3>The Solution</h3>
+         <p>ShareU provides a solution for difficulty spreading information on campus for university students. Our app organizes information such as events, clubs, tickets, textbooks, housing to verified students in one centralized platform. Not only can students sell and exchange items, but they can learn about events and clubs and become more involved in their campus community.</p>
+         <!-- <img src="images/shareuxdspec.png" alt = "shareu spec"/> -->
+         <div id="prototype" class="thirds">
+            <div id="uno" class="right-aligned">
+               <h5>Home</h5>
+               <p>Our main focus was the different representation of information depending on the categories.</p>
+               <h5>Browse</h5>
+               <p>We created 3 Browse screens to show different types of post for tickets, clubs, and events.</p>
+               <h5>Post</h5>
+               <p>We only created one type of post—Tickets—to emphasize the simple steps of creating a post. We focused on what information the users will require in buying/selling tickets online.</p>
+            </div>
+            <div id="dos">
+               <h5 >Inbox</h5>
+               <p>We simplified the messaging feature as much as possible to have strong and straightforward affordance.</p>
+               <h5>Profile</h5>
+               <p>Profile has your own profile and other's profile. Users should have the option to hide their information from the public so we eliminated a few pieces of information but maintained the reviews and ratings for both profile screens. </p>
+            </div>
+            <div id="tres" class="video">
+               <video class="image2" width="400" autoplay loop controls>
+                  <source src="videos/shareuproto.mp4" type="video/mp4">
+                  <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+                  <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
+                  Your browser does not support HTML5 video.
+               </video>
+            </div>
+         </div>
+         <br>
+         <div class="center">
+            <a id="button" href="https://xd.adobe.com/spec/6bc922cb-d000-496b-67c9-1ea304795f89-1df8/">Design Spec</a>
+         </div>
+         <div>
+            <br>
+            <h3>What makes our app so special? — Good question.</h3>
+            <p>Our app primarily centralizes all information needed to stay in the loop in college. The organized categorization makes it easier for users to find and post information, unlike current existing solutions such as the Facebook groups. It also only accepts verified college students for their specific campuses, ensuring a secure space for communication. It doesn’t just give college students the opportunity to buy or sell items but to really get involved with their community through shared events and campus activities. This inspires new friendships and fosters other relationships with their fellow classmates.</p>
+         </div>
+         <footer>
+            <div class="six-grid">
+               <div>
+                  <a href="shareu.html"><img id="cp" class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+                  <p class="gradient-text">ShareU</p>
+               </div>
+               <div>
+                  <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
+                  <p>Emergency Guidance</p>
+               </div>
+               <div>
+                 <a href="spotify.html"><img class="card" src="images/home/spotify.png" alt="spotify home" /></a>
+                 <p>Spotify Home</p>
+               </div>
+               <div>
+                  <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
+                  <p>UMSI Courses</p>
+               </div>
+               <div>
+                  <a href="unicorn.html"><img class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
+                  <p>Unicorn Bubbles</p>
+               </div>
+               <div>
+                 <a href="starbucks.html"><img class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
+                 <p>Starbucks & Happiness</p>
+               </div>
             </div>
             <br>
-            <div class="center">
-                <a class="button" href="https://xd.adobe.com/spec/6bc922cb-d000-496b-67c9-1ea304795f89-1df8/">Design Spec</a>
-            </div>
-            <div>
-
-                <br>
-                <h3>What makes our app so special? — Good question.</h3>
-                <p>Our app primarily centralizes all information needed to stay in the loop in college. The organized categorization makes it easier for users to find and post information, unlike current existing solutions such as the Facebook groups. It also only accepts verified college students for their specific campuses, ensuring a secure space for communication. It doesn’t just give college students the opportunity to buy or sell items but to really get involved with their community through shared events and campus activities. This inspires new friendships and fosters other relationships with their fellow classmates.</p>
-            </div>
-
-            <footer>
-
-                <div class="container">
-                    <div>
-                        <h2>Previous</h2>
-                        <div class="projects">
-                            <a href="index.html">Home</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h2>Up Next</h2>
-                        <div class="projects">
-                            <a href="unicorn.html">Unicorn Bubbles</a>
-                        </div>
-                        <!-- <a href="starbucks.html">Starbucks & Happiness</a>
-           <a href="umsi.html">UMSI Courses</a> -->
-                    </div>
-                </div>
-
-                <br>
-                <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
-                <p>Last updated Feb 2019</p>
-            </footer>
-    </main>
-</body>
-
+            <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
+            <p>Designed & Coded with 💓   |  ©️ March 2019</p>
+         </footer>
+      </main>
+   </body>
 </html>

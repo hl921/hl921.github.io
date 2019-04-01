@@ -1,5 +1,6 @@
 body{
-     margin:3%;
+     margin-left:3%;
+     margin-right:3%;
      font-size: 16px;
      color: #202020;
      line-height: 2;
@@ -11,28 +12,45 @@ body{
      background-size: cover;
 }
  */
- a{
-     color: #202020;
-     font-family: 'Merriweather';
-}
- a:link{
-     text-decoration: none;
-}
- a:hover, a:focus{
-     color:#FFC371;
-}
- a:active {
-     font-weight: bold;
-}
- a.current{
-     color:#FF5F6D;
-    /* font-family: 'Source Sans Pro';
-     */
+
+ a:link, a:visited{
+    text-decoration: none;
      font-weight: bolder;
-     border:3px;
-     text-decoration: line-through;
-     border-color:black;
+     color:#2ebf91;
+
 }
+
+ a:hover, a:focus, a:active{
+    color:#2ebf91;
+    text-decoration: underline;
+     transition: .2s ease;
+     font-weight: bolder;
+}
+
+
+ a.current{
+    color:#2ebf91;
+     border:3px;
+     font-weight: bolder;
+     text-decoration: line-through;
+     background: -webkit-linear-gradient(right, #8360c3 10%, #2ebf91);
+     -webkit-background-clip:text;
+     -webkit-text-fill-color: transparent;
+}
+
+#cp{
+  filter: grayscale(0%);
+}
+
+.spotify{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items:center;
+  padding-left: 10%;
+  padding-right: 3%;
+}
+
+
  .skip {
      position: absolute;
      top: -1000px;
@@ -83,26 +101,22 @@ body{
      margin-right: 10%;
 }
  h4{
-     font-size: 130%;
+     font-size: 140%;
      font-family: 'Source Sans Pro', bold;
-     margin-top: 30px;
+     /* margin-top: 30px; */
      margin-left: 10%;
      margin-right: 10%;
 }
  h5{
      font-size: 120%;
      font-family: 'Source Sans Pro', bold;
-     margin-top: 30px;
      margin-left: 10%;
      margin-right: 10%;
-     color:#FF5F6D;
 }
- .yellow h5{
-     color: #FFC371;
+.black{
+  color:#202020;
 }
- .purple h5{
-     color: #8E32DD;
-}
+
  .quotes{
      font-style: italic;
      color: gray;
@@ -131,17 +145,42 @@ body{
      width: 100%;
      height: 100%;
 }
+ .gradient{
+
+   background: -webkit-linear-gradient(right, #B8D8BA 10%, #D3D79D);
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+     font-family: "Source Sans Pro";
+ }
+ .gradient-text{
+   background: -webkit-linear-gradient(right, #8360c3 10%, #2ebf91);
+   -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+   font-weight: bolder;
+ }
+
  .desc-main{
-     font-weight: bold;
-     font-size: .5em;
+     /* font-weight: bold; */
+     /* font-size: 2em; */
      text-align: left;
-     /* padding: 5%; */
-     background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
+     margin-left: -10%;
+     margin-right: -10%;
+     padding-top: 5%;
+     padding-bottom: 5%;
+     /* background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
      -webkit-background-clip:text;
-     -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent; */
 }
-.desc-main p{
-  font-size: 3em;
+.desc-main h1{
+      font-family: "Source Sans Pro";
+      font-size: .8em;
+      text-align: center;
+      color: silver;
+      font-weight: lighter;
+}
+ .desc-main p{
+   color: #BFD0E0;
+   font-weight: lighter;
 }
  .desc {
     /* font-size: 150%;
@@ -216,31 +255,27 @@ body{
     /* font-size: 200%;
      */
 }
- .button{
-     font-weight: bolder;
-     text-align: center;
-     text-decoration: none;
-     font-family: "Open Sans";
-     color: black;
-     padding: 5%;
-}
+
  .box{
      box-sizing: border-box;
      margin-top: 20px;
 }
- .button{
-     background: -webkit-linear-gradient(right, #FF5F6D, #FFC371);
+ #button{
+     font-family: "Source Sans Pro";
+     font-weight: bolder;
+     background: -webkit-linear-gradient(right, #8360c3 10%, #2ebf91);
      border: none;
      color: white;
      text-align: center;
      text-decoration: none;
      display: inline-block;
-     font-size: 1em;
+     font-size: 1.2em;
      cursor: pointer;
      border-radius: 100px;
      padding: .5rem 1.66667rem;
      margin: auto;
 }
+
  .margin{
      margin-left: 13%;
      margin-right: 13%;
@@ -253,11 +288,12 @@ body{
      position: relative;
 }
  footer{
-     margin-top: 10%;
+     margin-top: 5%;
      text-align: center;
      color: silver;
      font-size: 80%;
 }
+
  i{
      font-size: 1.5em;
      padding: 2%;
@@ -267,19 +303,55 @@ body{
      color:#FFC371;
 }
  nav ul {
-     font-size: 120%;
-     font-family: "Merriweather";
+     font-size: 110%;
+     font-family: "Source Sans Pro";
      list-style-type: none;
      overflow: hidden;
      text-align: right;
-     display: block;
+     display: inline;
+     color: silver;
 }
- .projects a{
-     display: block;
-     color: #FF5F6D;
-     font-size: 180%;
+nav li a:link, nav li a:visited{
+  font-weight: 400;
+  color: silver;
+  text-decoration: none;
 }
- .projects a:focus, .projects a:hover{
+nav li a:hover{
+  text-decoration: underline;
+}
+.round img{
+   border-radius: 2%;
+}
+ .six-grid{
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   align-items: baseline;
+   grid-column-gap: 2em;
+   padding: 5%;
+ }
+
+ .six-grid div img {
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+
+ }
+ .six-grid div img:hover,:focus{
+   filter: grayscale(0%);
+   height: auto;
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+ }
+
+
+ footer div p a{
+   color: silver;
+ }
+
+ footer p{
+   font-family: "Source Sans Pro";
+ }
+
+ .footer a:focus, .footer a:hover{
      color:#FFC371;
 }
  .ca{
@@ -287,9 +359,7 @@ body{
      height:auto;
      padding-bottom: 5%;
 }
- .contact a{
-     text-decoration: underline;
-}
+
 /* .parent {
      position: relative;
      top: 0;
@@ -319,12 +389,7 @@ body{
      font-family: "Merriweather";
 }
 
- .arts {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   align-items: center;
-   grid-gap: 2em;
- }
+
 
  .arts div img {
    width: 60%;
@@ -409,18 +474,54 @@ body{
     from {transform:scale(0)}
     to {transform:scale(1)}
 }
+/* .imghover{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: #202020;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
 
 
- @media screen and (min-device-width:700px) and (min-width:700px) and (max-width:1000px){
+@media screen and (min-device-width:700px) and (min-width:700px) and (max-width:1000px){
+
+   .arts {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     grid-gap: 2em;
+   }
      .scenario{
          display: grid;
          grid-template-columns: repeat(2, 1fr);
     }
-     .projects a{
-         display: inline;
-         padding: 4%;
-         font-size: 180%;
-    }
+
      .personas{
          display:grid;
          grid-template-columns: repeat(2, 1fr);
@@ -439,6 +540,10 @@ body{
         list-style-type: none;
         overflow: hidden;
    }
+   nav li a:link{
+     font-weight: 400;
+     color: silver;
+   }
     .nav-left {
         float: left;
    }
@@ -455,7 +560,7 @@ body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items:flex-start;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-right: 5%;
    }
 
@@ -472,7 +577,7 @@ body{
          font-weight: bold;
          font-size: 100%;
          text-align: left;
-         padding: 5%;
+         /* padding: 5%; */
          background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
          -webkit-background-clip:text;
          -webkit-text-fill-color: transparent;
@@ -480,6 +585,13 @@ body{
 
 }
  @media screen and (min-device-width:1000px) and (min-width:1000px){
+
+    .arts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      grid-gap: 2em;
+    }
      .unicorn video{
          top: 0;
          bottom: 0;
@@ -496,11 +608,7 @@ body{
          margin-left: 5%;
          margin-right: 5%;
     }
-     .projects a{
-         display: inline;
-         padding: 2%;
-         font-size: 180%;
-    }
+
      .personas{
          display:grid;
          grid-template-columns: repeat(2, 1fr);
@@ -522,7 +630,7 @@ body{
      .video2{
          display:grid;
          grid-template-columns:repeat(2, 1fr);
-         grid-column-gap: 30px;
+         grid-column-gap: 100px;
          width: 70%;
          padding-bottom: 5%;
          text-align: center;
@@ -531,13 +639,18 @@ body{
      .container {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
-         margin-left: 5%;
-         margin-right: 5%;
+         /* margin-left: 5%;
+         margin-right: 5%; */
         /* grid-row-gap: .3em;
         . */
     }
      .container div{
-         padding: 3%;
+         padding: 4%;
+    }
+    .container div h4{
+      margin-top: -1%;
+      margin-left: -1%;
+      text-align: left;
     }
      .three{
          display: grid;
@@ -569,9 +682,20 @@ body{
      nav ul {
          list-style-type: none;
          overflow: hidden;
-         font-family: "Merriweather";
+         font-family: "Source Sans Pro";
+
     }
-     .nav-left {
+    nav li{
+      float: right;
+      display: inline-block;
+      width: 8%;
+      text-align: center;
+    }
+    nav li a{
+      font-weight: 400;
+      color: silver;
+    }
+     /* .nav-left {
          float: left;
     }
      .nav-left ul li {
@@ -581,7 +705,7 @@ body{
          float: right;
          width: 10%;
          text-align: center;
-    }
+    } */
      .thirds{
          display: grid;
          grid-template-columns: repeat(3, 1fr);
@@ -616,16 +740,18 @@ body{
          text-align: left;
     }
      .desc-main{
-         font-size: 100%;
+         font-size: 2em;
          font-weight: bold;
-         text-align: center;
-         padding: 10%;
-         background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
+         text-align: left;
+         line-height: 1.5;
+         /* padding: 3%; */
+         /* color: silver; */
+         /* background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
          -webkit-background-clip:text;
-         -webkit-text-fill-color: transparent;
+         -webkit-text-fill-color: transparent; */
     }
      .desc-main p{
-         font-size: 300%;
-         font-weight: bold;
+         font-size: 1em;
+         /* font-weight: bold; */
     }
 }

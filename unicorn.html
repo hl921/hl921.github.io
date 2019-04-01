@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,20 +15,13 @@
 <body>
     <a class="skip" href="#main">Skip to Content</a>
     <header>
-        <nav>
-            <div class="nav-left">
-                <ul>
-                    <li><a href="index.html">Jenny Lee</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                      <li><a href="art.html">Art</a></li>
-                    <li><a class="current" href="index.html">Work</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+              <ul>
+          <li><a href="about.html">About</a></li>
+                  <li><a href="art.html">Art</a></li>
+                  <li><a class="current" href="index.html">Work</a></li>
+              </ul>
+      </nav>
     </header>
     <br>
     <main id="main">
@@ -38,7 +32,7 @@
         <br>
         <p>Unicorn Bubbles needs a Kiosk (iPad) app that allows ordering and customizing bubble tea. It should let customers order multiple drinks with a single submission. There should be a request for confirmation of each drink before adding it to the current order. Calculating and displaying the total amount of each drink and of the total order is another important feature. The final step should be issuing a confirmation of the total order before finally sending it to the barista.</p>
         <div class="center">
-            <a class="button" href="#prototype">Skip to Prototype</a>
+            <a id="button" href="#prototype">Skip to Prototype</a>
         </div>
         <h3>Ideation</h3>
         <p>Before I jumped into the actual researching, I grabbed my pen and paper and started sketching. I wanted to visualize what was going through my head after I reviewed the key features of the application. My goal was to make design minimalistic as possible without including the price of the items. Implementing the price and checking out process was not part of my design focus. You can see in my first sketch, however, that I tried to put the pricing in there. Through this process I was be able to eliminate parts of the app that could be developed later on. The thinking process for my lo-fi prototyping by hand included the following steps:</p>
@@ -54,7 +48,7 @@
         </ul>
         <p>I wanted an image of the bubble tea on the side and for it to live update as the user makes changes to the tea. For example, if the user wanted to choose a "peach" flavor milk tea, the color of the bubble tea would change to a pinkish salmon color to reflect that. This image would automatically update according to the selection. The second screen in the sketch has the most annotation because that is when I had to set up the concept and app speculations.</p>
 
-        <div class="container">
+        <div class="container shrink">
             <div>
                 <img src="images/ubsketch1.png" alt="sketch1" />
             </div>
@@ -63,9 +57,10 @@
             </div>
         </div>
 
+        <h4>Low Fidelity Prototype</h4>
         <p>The second set of sketches were formed after I played around with Illustrator for a while. I also did research on figuring out what was realistically possible and what was not. I looked at how I wanted to incorporate the live updating bubble tea. I had to decide if it was going to be a vector or a jpeg. I played around in Photoshop to see what it would look like to have the bubble tea in jpeg format. It was difficult to photoshop, and after I placed them on the background, it did not look sophisticated at all. So I ended up ditching the jpeg and decided to go with the vector for two reasons - easier to replicate and visually appealing. During this step, I was able to decide on the UI elements. </p>
 
-        <div class="container">
+        <div class="container shrink">
             <div>
                 <img src="images/ubsketch3.png" alt="sketch3" />
             </div>
@@ -78,16 +73,19 @@
         <p>In order to stay consistent with the design elements and the Human Interface Guidelines, I lowered the saturation of the iOS blue and red to create a pastel gradient. To go along with the name of the app, I decided to go with a unicorn colored theme using white text, vectors, outlines, and buttons. I was inspired by different designs during my research, and reiterated through multiple different versions and was really happy with the final design!
             <p>
                 <h4>Live Updating Boba Icon</h4>
+                <p>I assembled the different parts of the bubble tea, including the cup, black tapioca pearls, and the milk tea. While the users are selecting their choices through the screens, the tea figure (or icon) updates itself.
                 <div class="small">
                     <img src="images/boba.png" alt="boba" />
                 </div>
                 <h4>Analogous Color Harmony</h4>
+                <p> For the color harmony, I picked the analogous palette to give off a subtle emotion. Because bubble teas are usually pastel colors due to the amount of milk in it, I chose to go for the pastel pink, purple, and blue to match that feel. Additionally, the name of this store or application was "Unicorn Bubbles." This color palette is a great representation of the mystical creature. </p>
                 <div class="center">
                     ￼<img id="color" src="images/colorharmony.png" alt="color harmony" />
                 </div>
                 <h4>Typographic Specimen</h4>
+                <p>With the font, I decided to stay simple and chose "Futura" for the whole application. But I gave it variation by making them all caps and different trackings. </p>
                 <div class="container">
-                    <div class="shrink">
+                    <div class="shrink center">
                         ￼<img src="images/typo.png" alt="typography" />
                     </div>
                     <div>
@@ -107,7 +105,7 @@
                 <h4>UI Elements</h4>
                 <div class="container">
                     <div class="small">
-                        ￼<img src="images/design.png" alt="design elements" />
+                        ￼<img class="shrink" src="images/design.png" alt="design elements" />
                     </div>
                     <div>
                         <h5>Buttons</h5>
@@ -127,8 +125,12 @@
                 <h3>Interaction Design</h3>
                 <p>Using Adobe XD, I transferred my screens over from Illustrator. I added interactions in between each screen, connecting each of them with a click. Below is the design spec of my application. Click here if you would like to view the full design spec. My design flow started from the home screen, building one off of each other as I clicked through each element like I was a user who was ordering a bubble tea. The scenario was to order 2 Mango Turtle Tea with bubbles and 1 Peach Milk Tea with bubbles. As I thought about the persona and the scenario, I made sure to connect the elements that had to do with the order. The final screen connects back to the home screen to begin another order. Below the design spec shows a screen recording of how my application works.</p>
                 <div class="center">
-                    <a class="button" href="https://xd.adobe.com/spec/9ec5d9f1-8cdd-4b15-6319-8d22bc36aa35-e8f4/">  Design Spec  </a>
+                    <a id="button" href="https://xd.adobe.com/spec/9ec5d9f1-8cdd-4b15-6319-8d22bc36aa35-e8f4/">  Design Spec  </a>
                 </div>
+                <br>
+                <img src="images/ubxdspec.png" alt="xd spec"/>
+
+                <br>
                 <br>
                 <div class="unicorn" id="prototype">
                     <video controls autoplay loop src="videos/ubvideo.mov" type="video/mov">
@@ -138,30 +140,41 @@
                     </video>
 
                 </div>
+
+
                 <footer>
-                    <div class="container">
-                        <div>
-                            <h2>Previous</h2>
-                            <div class="projects">
-                                <a href="shareu.html">ShareU</a>
-                            </div>
-                        </div>
+                   <div class="six-grid">
+                     <div>
+                        <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+                        <p>ShareU</p>
+                     </div>
+                     <div>
+                        <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
+                        <p>Emergency Guidance</p>
+                     </div>
+                     <div>
+                       <a href="spotify.html"><img class="card" src="images/home/spotify.png" alt="spotify home" /></a>
+                       <p>Spotify Home</p>
+                     </div>
+                      <div>
+                         <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
+                         <p>UMSI Courses</p>
+                      </div>
+                      <div>
+                         <a href="unicorn.html"><img id="cp" class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
+                         <p class="gradient-text">Unicorn Bubbles</p>
+                      </div>
+                      <div>
+                        <a href="starbucks.html"><img class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
+                        <p>Starbucks & Happiness</p>
 
-                        <div>
-                            <h2>Up Next</h2>
-                            <div class="projects">
-                                <a href="starbucks.html">Starbucks & Happiness</a>
-                            </div>
-
-                            <!-- <a href="umsi.html">UMSI Courses</a> -->
-                        </div>
-                    </div>
-
-                    <br>
-                    <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
-                    <p>Last updated Feb 2019</p>
+                      </div>
+                   </div>
+                   <br>
+                   <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
+                   <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
+                   <p>Designed & Coded with 💓   |  ©️ March 2019</p>
                 </footer>
     </main>
 </body>
