@@ -581,6 +581,13 @@ nav li a:hover{
         line-height: 1.5;
 
    }
+     .desc-main h1{
+      font-family: "Source Sans Pro";
+      font-size: .8em;
+      text-align: center;
+      color: silver;
+      font-weight: lighter;
+}
     .desc-main p{
         font-size: 1em;
         /* font-weight: bold; */
