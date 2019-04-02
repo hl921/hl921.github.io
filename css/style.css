@@ -574,16 +574,17 @@ nav li a:hover{
         /* font-size: 80%;
          */
     }
-     .desc-main{
-         font-weight: bold;
-         font-size: 100%;
-         text-align: left;
-         /* padding: 5%; */
-         background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
-         -webkit-background-clip:text;
-         -webkit-text-fill-color: transparent;
-    }
+    .desc-main{
+        font-size: 2em;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.5;
 
+   }
+    .desc-main p{
+        font-size: 1em;
+        /* font-weight: bold; */
+   }
 }
  @media screen and (min-device-width:1000px) and (min-width:1000px){
    .spotify{
@@ -752,11 +753,7 @@ nav li a:hover{
          font-weight: bold;
          text-align: left;
          line-height: 1.5;
-         /* padding: 3%; */
-         /* color: silver; */
-         /* background: -webkit-linear-gradient(left, #FF5F6D 10%, #FFC371);
-         -webkit-background-clip:text;
-         -webkit-text-fill-color: transparent; */
+
     }
      .desc-main p{
          font-size: 1em;
