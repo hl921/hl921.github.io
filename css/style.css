@@ -33,7 +33,7 @@ body{
      border:3px;
      font-weight: bolder;
      text-decoration: line-through;
-     background: -webkit-linear-gradient(right, #8360c3 10%, #2ebf91);
+     background: -webkit-linear-gradient(right, #B8D8BA 10%, #D3D79D);
      -webkit-background-clip:text;
      -webkit-text-fill-color: transparent;
 }
