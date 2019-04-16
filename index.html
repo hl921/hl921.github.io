@@ -2,20 +2,34 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138162152-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138162152-1');
+</script>
+
+<script src="script.js"></script>
+
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans|Muli' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:light,bold|Source+Sans+Pro:light|Lato:Bold' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Jenny Lee</title>
 </head>
 
-<body class="wp">
+<body>
     <a class="skip" href="#main">Skip to Content</a>
     <header>
-        <nav>
-                <ul>
+        <a id="menutoggle"><i class="fa fa-bars"></i></a>
+        <br><br>
+        <nav id="menu">
+                <ul id="navbar">
                     <li><a href="about.html">About</a></li>
                     <li><a href="art.html">Art</a></li>
                     <li><a class="current" href="index.html">Work</a></li>
@@ -25,12 +39,17 @@
     <br>
     <main id="main">
         <div class="desc-main">
-            <h1>Hello! I'm <a class="gradient" href="about.html">Jenny</a>, a User Experience Designer.</h1>
-        </div>
-        <div class="container round shrink">
 
+            <h1>Hello!</h1>
+            <h2 id="typewriter">I'm Jenny, a User Experience Designer making people's lives more convenient through elegant and innovative design. ✨</h2>
+        </div>
+
+        <div class="container">
+          <div>
+            <a href="orb.html"><img class="card" src="images/home/orb.png" alt="orb home" /></a>
+          </div>
             <div>
-                <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+              <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
             </div>
             <div>
                 <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
@@ -55,7 +74,7 @@
             <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
-            <p>Designed & Coded with 💓   |  ©️ March 2019</p>
+            <p>Designed & Coded with 💓 <br>©️ April 2019</p>
         </footer>
     </div>
 
