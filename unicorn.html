@@ -132,15 +132,31 @@
 
                 <br>
                 <br>
-                <div class="unicorn" id="prototype">
-                    <video controls autoplay loop src="videos/ubvideo.mov" type="video/mov">
+                <div class="unicorn shrink" id="prototype">
+                    <video autoplay loop id="myVideo" src="videos/ubvideo.mov" type="video/mov">
                         <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
                             <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
                                 Your browser does not support HTML5 video.
                     </video>
 
                 </div>
+                <div class="center">
 
+                  <a onclick="playVid()" type="button"><i class="fas fa-play"></i></a>
+                  <a onclick="pauseVid()" type="button"><i class="fas fa-pause"></i></a>
+                  <br>
+
+                <script>
+                  var vid = document.getElementById("myVideo");
+
+                  function playVid() {
+                    vid.play();
+                  }
+
+                  function pauseVid() {
+                    vid.pause();
+                  }
+                  </script>
 
                 <footer>
                    <div class="six-grid">
