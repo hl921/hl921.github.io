@@ -156,6 +156,10 @@
          <p>
             We got great feedback on the interaction of the application and also the content issues that were confusing. From our first attempt, this version is more thorough and detailed. The replicating and filming process was also went smoother.
          </p>
+
+
+
+
          <h5><a class="gradient-text">Categories > Tickets</a></h5>
          <p>Our first defect was a missing subcategory screens within the categories menu. We originally made our users click on it to show them that they can access the categories by clicking the icon in the menu bar. However, we made the users press the back button instead of prompting to do anything more. To fix this problem, we decided to add a “Tickets” feed. This also helped us develop the interaction within our scenario, building the user story to first the user researching for a ticket to see the different prices, then to creating a post to sell a ticket.</p>
          <h5><a class="gradient-text">Search Results</a></h5>
@@ -164,30 +168,41 @@
          <p> One of the defects with minor severity was the missing badge icon for messages. We thought that when the user receives a message in their inbox, displaying a notification with a number that shows how many new messages they received would be helpful. We also got feedback that colors that we selected for certain functions were confusing. For example, if we were to select a different color for a button, we have to keep the color consistent throughout the whole application so that the color has a purpose. We moved away from this to create a more consistent design in terms of color coordination.</p>
          <h3>The Solution</h3>
          <p>ShareU provides a solution for difficulty spreading information on campus for university students. Our app organizes information such as events, clubs, tickets, textbooks, housing to verified students in one centralized platform. Not only can students sell and exchange items, but they can learn about events and clubs and become more involved in their campus community.</p>
-         <!-- <img src="images/shareuxdspec.png" alt = "shareu spec"/> -->
-         <div id="prototype" class="thirds">
-            <div id="uno" class="right-aligned">
+
+         <div class="shareu center">
+          <video id="prototype" class="image2" autoplay controls loop>
+             <source src="videos/shareuproto.mp4" type="video/mp4">
+             <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+             <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
+             Your browser does not support HTML5 video.
+          </video>
+       </div>
+
+         <div class="five-grid">
+           <div>
                <h4>Home</h4>
-               <p>Our main focus was the different representation of information depending on the categories.</p>
+               <p>Presents most recent posts based on user's interests</p>
+             </div>
+             <div>
                <h4>Browse</h4>
-               <p>We created 3 Browse screens to show different types of post for tickets, clubs, and events.</p>
+               <p>Sorts posts in categories for clear organization</p>
+               </div>
+            <div>
                <h4>Post</h4>
-               <p>We only created one type of post—Tickets—to emphasize the simple steps of creating a post. We focused on what information the users will require in buying/selling tickets online.</p>
+               <p>Validates user inputs when creating a post</p>
             </div>
-            <div id="dos">
+            <div>
                <h4>Inbox</h4>
-               <p>We simplified the messaging feature as much as possible to have strong and straightforward affordance.</p>
+               <p>Simplifies messaging feature for strong affordance</p>
+             </div>
+            <div>
                <h4>Profile</h4>
-               <p>Profile has your own profile and other's profile. Users should have the option to hide their information from the public so we eliminated a few pieces of information but maintained the reviews and ratings for both profile screens. </p>
-            </div>
-              <div id="tres" class="video">
-               <video id="myVideo" class="image2" width="400" autoplay controls loop>
-                  <source src="videos/shareuproto.mp4" type="video/mp4">
-                  <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
-                  <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
-                  Your browser does not support HTML5 video.
-               </video>
-            </div>
+               <p>Supports reviews and ratings and contact information</p>
+          </div>
+
+   </div>
+
+
 
          </div>
 
@@ -206,7 +221,7 @@
             <div class="six-grid">
                <div>
                   <a href="shareu.html"><img id="cp" class="card" src="images/home/shareu.png" alt="shareu home" /></a>
-                  <p class="gradient-text">ShareU</p>
+                  <p class="bold">ShareU</p>
                </div>
                <div>
                   <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
