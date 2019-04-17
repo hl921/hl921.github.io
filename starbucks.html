@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138162152-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138162152-1');
+  </script>
+
+  <script src="script.js"></script>
+
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:300,600|Opens+Sans|Lato' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Starbucks & Happiness</title>
 </head>
@@ -14,9 +25,11 @@
 <body>
     <a class="skip" href="#main">Skip to Content</a>
     <header>
-      <nav>
-              <ul>
-                      <li><a href="about.html">About</a></li>
+      <a id="menutoggle"><i class="fa fa-bars"></i></a>
+      <br><br>
+      <nav id="menu">
+              <ul id="navbar">
+                  <li><a href="about.html">About</a></li>
                   <li><a href="art.html">Art</a></li>
                   <li><a class="current" href="index.html">Work</a></li>
               </ul>
@@ -32,26 +45,30 @@
             <p>I explored the idea of the correlation between worldwide Starbucks locations and the country’s happiness score. The company has over 26,000 locations worldwide.</p>
         </div>
         <div class="center">
-            <a id="button" href="docs/Starbucks+and+Happiness.html">View Code</a>
+            <a class="button info" href="docs/Starbucks+and+Happiness.html">View Code</a>
         </div>
         <h3>Motivation</h3>
         <p>Starbucks makes me and its customers happy. Could it be possible for the biggest coffee house chain in the world to affect the happiness of countries around the world? I wanted to analyze this inquiry on a worldwide scale. By manipulating World Happiness Report data and Starbucks Worldwide Location data, I wanted to see if Starbucks stores in certain countries have correlation to their happiness and GDP. Do richer or happier countries have more Starbucks? What about healthy life expectancy scores or freedom scores? Along with happiness score, I analyzed the effect of number of Starbucks on GDP, healthy life expectancy score, and freedom to make life choices score to discover interesting correlations.</p>
 
         <h3>Data Sources</h3>
+
         <div class="scenario">
-            <div>
                 <div class="center">
                     <img class="icon" src="images/earth-globe.png" alt="earth" />
                 </div>
+                <div>
                 <p>The World Happiness Report data came from Wikipedia. I fetched the data using requests.get and parsed the HTML page using BeautifulSoup. The table contained 155 countries that made it to the world happiness report and their information about overall rank, happiness score, GDP per capita, healthy life expectancy, freedom, social support, and etc.</p>
-            </div>
-            <div>
+              </div>
+        </div>
+        <div class="scenario">
                 <div class="center">
                     <img class="icon" src="images/coffee.png" alt="coffee" />
                 </div>
+                <div>
                 <p>The Starbucks worldwide location data was found in a CSV file that I downloaded from Kaggle. This data was scraped from Starbucks store locator webpage by Github user chrismeller. It has over 26,000 retail stores in 70 countries. It contains information about the store number, store name, street address, country code, postcode, phone number, time zone, longitude, and latitude.</p>
-            </div>
+              </div>
         </div>
+
         <h3>Methods</h3>
 
         <h4>Country Names</h4>

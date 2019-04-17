@@ -3,11 +3,22 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138162152-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138162152-1');
+  </script>
+
+  <script src="script.js"></script>
+
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:light|Source+Sans+Pro|Opens+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700|Source+Sans+Pro:300,600|Opens+Sans|Lato' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Unicorn Bubbles</title>
 </head>
@@ -15,9 +26,11 @@
 <body>
     <a class="skip" href="#main">Skip to Content</a>
     <header>
-      <nav>
-              <ul>
-          <li><a href="about.html">About</a></li>
+      <a id="menutoggle"><i class="fa fa-bars"></i></a>
+      <br><br>
+      <nav id="menu">
+              <ul id="navbar">
+                  <li><a href="about.html">About</a></li>
                   <li><a href="art.html">Art</a></li>
                   <li><a class="current" href="index.html">Work</a></li>
               </ul>
@@ -32,7 +45,7 @@
         <br>
         <p>Unicorn Bubbles needs a Kiosk (iPad) app that allows ordering and customizing bubble tea. It should let customers order multiple drinks with a single submission. There should be a request for confirmation of each drink before adding it to the current order. Calculating and displaying the total amount of each drink and of the total order is another important feature. The final step should be issuing a confirmation of the total order before finally sending it to the barista.</p>
         <div class="center">
-            <a id="button" href="#prototype">Skip to Prototype</a>
+            <a class="button info" href="#prototype">Skip to Prototype</a>
         </div>
         <h3>Ideation</h3>
         <p>Before I jumped into the actual researching, I grabbed my pen and paper and started sketching. I wanted to visualize what was going through my head after I reviewed the key features of the application. My goal was to make design minimalistic as possible without including the price of the items. Implementing the price and checking out process was not part of my design focus. You can see in my first sketch, however, that I tried to put the pricing in there. Through this process I was be able to eliminate parts of the app that could be developed later on. The thinking process for my lo-fi prototyping by hand included the following steps:</p>
@@ -104,7 +117,7 @@
                 <br />
                 <h4>UI Elements</h4>
                 <div class="container">
-                    <div class="small">
+                    <div class="shrink">
                         ￼<img class="shrink" src="images/design.png" alt="design elements" />
                     </div>
                     <div>
@@ -125,7 +138,7 @@
                 <h3>Interaction Design</h3>
                 <p>Using Adobe XD, I transferred my screens over from Illustrator. I added interactions in between each screen, connecting each of them with a click. Below is the design spec of my application. Click here if you would like to view the full design spec. My design flow started from the home screen, building one off of each other as I clicked through each element like I was a user who was ordering a bubble tea. The scenario was to order 2 Mango Turtle Tea with bubbles and 1 Peach Milk Tea with bubbles. As I thought about the persona and the scenario, I made sure to connect the elements that had to do with the order. The final screen connects back to the home screen to begin another order. Below the design spec shows a screen recording of how my application works.</p>
                 <div class="center">
-                    <a id="button" href="https://xd.adobe.com/spec/9ec5d9f1-8cdd-4b15-6319-8d22bc36aa35-e8f4/">  Design Spec  </a>
+                    <a class="button info" href="https://xd.adobe.com/spec/9ec5d9f1-8cdd-4b15-6319-8d22bc36aa35-e8f4/">  Design Spec  </a>
                 </div>
                 <br>
                 <img src="images/ubxdspec.png" alt="xd spec"/>

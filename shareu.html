@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138162152-1"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-138162152-1');
+     </script>
+
+     <script src="script.js"></script>
+
       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" href="images/favicon.ico">
       <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -12,13 +23,15 @@
    <body class="purple">
       <a class="skip" href="#main">Skip to Content</a>
       <header>
-         <nav>
-            <ul>
+        <a id="menutoggle"><i class="fa fa-bars"></i></a>
+        <br><br>
+        <nav id="menu">
+                <ul id="navbar">
                     <li><a href="about.html">About</a></li>
-               <li><a href="art.html">Art</a></li>
-               <li><a class="current" href="index.html">Work</a></li>
-            </ul>
-         </nav>
+                    <li><a href="art.html">Art</a></li>
+                    <li><a class="current" href="index.html">Work</a></li>
+                </ul>
+        </nav>
       </header>
       <br>
       <main id="main">
@@ -168,7 +181,7 @@
                <p>Profile has your own profile and other's profile. Users should have the option to hide their information from the public so we eliminated a few pieces of information but maintained the reviews and ratings for both profile screens. </p>
             </div>
               <div id="tres" class="video">
-               <video id="myVideo" class="image2" width="400" autoplay loop>
+               <video id="myVideo" class="image2" width="400" autoplay controls loop>
                   <source src="videos/shareuproto.mp4" type="video/mp4">
                   <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
                   <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
@@ -181,7 +194,7 @@
 
          <br>
          <div class = "center">
-            <a class="button" href="https://xd.adobe.com/spec/6bc922cb-d000-496b-67c9-1ea304795f89-1df8/">Design Spec</a>
+            <a class="button info" href="https://xd.adobe.com/spec/6bc922cb-d000-496b-67c9-1ea304795f89-1df8/">Design Spec</a>
          </div>
 
          <div>

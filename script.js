@@ -1,20 +1,5 @@
 window.onload = function(){
-var sentence = document.getElementById("typewriter");
 
-function typewriter(text) {
-
-  var letterArray = text.innerHTML.split('');
-  text.innerHTML = '';
-  letterArray.forEach(
-    (letter, index) => {
-      setTimeout(function() {
-        text.innerHTML += letter;
-      }, 60 * index)
-    }
-  )
-}
-
-typewriter(sentence);
 
 window.onscroll = function() {myFunction()};
 
@@ -33,5 +18,7 @@ var toggleButton = document.getElementById('menutoggle');
 toggleButton.addEventListener('click', function(){
     document.getElementById('menu').classList.toggle('open');
 })
+
+
 
 }

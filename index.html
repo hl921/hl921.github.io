@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:light,bold|Source+Sans+Pro:light|Lato:Bold' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:light,bold|Source+Sans+Pro:light,semi-bold|Lato:medium,Bold' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Jenny Lee</title>
 </head>
@@ -39,32 +39,56 @@
     <br>
     <main id="main">
         <div class="desc-main">
-
             <h1>Hello!</h1>
             <h2 id="typewriter">I'm Jenny, a User Experience Designer making people's lives more convenient through elegant and innovative design. ✨</h2>
         </div>
+        <script>
+        var sentence = document.getElementById("typewriter");
 
+        function typewriter(text) {
+
+          var letterArray = text.innerHTML.split('');
+          text.innerHTML = '';
+          letterArray.forEach(
+            (letter, index) => {
+              setTimeout(function() {
+                text.innerHTML += letter;
+              }, 60 * index)
+            }
+          )
+        }
+
+        typewriter(sentence);
+        </script>
         <div class="container">
-          <div>
+
+          <!-- <div class="wrap">
             <a href="orb.html"><img class="card" src="images/home/orb.png" alt="orb home" /></a>
-          </div>
-            <div>
+            <h3 class="caption">ORB Toys Asset Portal</h3>
+          </div> -->
+            <div class="wrap">
               <a href="shareu.html"><img class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+              <h3 class="caption">ShareU</h3>
             </div>
-            <div>
+            <div class="wrap">
                 <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
+                <h3 class="caption">Emergency Guidance</h3>
             </div>
-            <div>
+            <div class="wrap">
               <a href="spotify.html"><img class="card" src="images/home/spotify.png" alt="spotify home" /></a>
+              <h3 class="caption">Spotify Mobile</h3>
             </div>
-            <div>
+            <div class="wrap">
               <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
+              <h3 class="caption">UMSI Courses</h3>
             </div>
-            <div>
+            <div class="wrap">
               <a href="unicorn.html"><img class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
+              <h3 class="caption">Unicorn Bubbles</h3>
             </div>
-            <div>
+            <div class="wrap">
                 <a href="starbucks.html"><img class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
+                <h3 class="caption">Starbucks & Happiness</h3>
             </div>
         </div>
 
