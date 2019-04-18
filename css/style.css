@@ -10,9 +10,9 @@ body{
 }
 
  a:link, a:visited{
-    text-decoration: underline;
+   text-decoration: none;
      font-weight: bolder;
-     color:black;
+     color:#3e527a;
 
 }
 
@@ -451,6 +451,7 @@ nav li a.current{
   height: 100%;
 }
 
+
 @media screen and (min-device-width:700px) and (min-width:700px) and (max-width:1000px){
   h1{
       font-size: 250%;
@@ -835,7 +836,7 @@ nav li a.current{
         grid-template-columns: repeat(3,1fr);
         grid-column-gap: 3em;
    }
-   .three p, .three h5{
+   .three p, .three h4{
      margin-left: auto;
      margin-right: auto;
    }
@@ -946,6 +947,7 @@ nav li a.current{
    }
 
    .wrap .caption {
+     background-color: white;
      width: 100%;
      height: 100%;
      position: absolute;
@@ -956,13 +958,17 @@ nav li a.current{
      opacity: 0;
    }
 
+   .caption h3, .caption p{
+     color:black;
+     background-color: white;
+   }
+
   .wrap:hover .caption {
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     visibility: visible;
-    background-color: white;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9); */
-    opacity: 1;
+    opacity: .8;
   }
 
 }
