@@ -37,7 +37,7 @@
       <br>
       <main id="main">
          <br>
-         <img src="images/orb_mockup.png" alt="orb mockup" />
+         <img src="images/orb_mock.png" alt="orb mockup" />
          <h1>ORB Toy Asset Management Portal</h1>
 
          <h2>Web UX Design</h2>
@@ -140,9 +140,7 @@
          <h4>Sharing</h4>
          <p>Almost every site offered great sharing options. If a user wants to share assets with other users, they have the option to click a button and receive sharing options like email, shareable links, text message, social media, etc.
          </p>
-
-
-
+         <br>
 
          <h3>User Surveys</h3>
          <p>Our user surveys helped us reach research goals such as “receive direct feedback from current users of the email” and answer questions like “what are the pain points for users currently using this system and how would they like to see them addressed.” With mainly open-ended questions, our purpose was to get a detailed insight from the actual users who go through the current asset request process.</p>
@@ -153,39 +151,328 @@
         </div>
 <p>Our recruitment strategy was to receive survey feedback from our direct user who would be using this portal the most: the ORB Sales Team. Our client was able to send our survey on Google Form to the entire sales team who then filled it out for us. Their position titles at ORB were the following: International Administrative Assistant, Sales Coordinator, Sales Support, Sales Manager, Account Manager, and VP INTL Sales. We received a total of 8 responses, with each providing descriptive explanations on their experience with the current email system. The low number does have potential to introduce bias into our survey results, as we are only receiving feedback from a single team. We could be missing feedback from certain niche employees that would also use this site.</p>
 
+<h4>Usability Rating of the Email System</h4>
+<div class="center shrink">
+ <img src="images/usability.png" alt="usablity.com" />
+</div>
+<p>We asked to rate their experience using the current email asset system. With 1 being “difficult” and 5 being “easy,” this question was used as a primer question to get participants to understand what this survey was trying to assess. We had the majority rating the system as 3, meaning neutral difficulty to use. We had 0 responses for the experience being difficult, but they had numerous suggestions on improving it.</p>
+<div class="text-two-column">
+<div>
+<h4>Pros</h4>
+<ul>
+  <li>Interaction of each request that leads to additional clarity</li>
+    <li>Quality of work provided</li>
+      <li>Quick and Easy
+</li>
+        <li>Searchable in the mail for future reference</li>
+<ul>
+</div>
+
+<div>
+<h4>Cons</h4>
+<ul>
+  <li>Timeliness of response</li>
+    <li>Requiring follow up</li>
+      <li>Adding more email to their already busy inboxes</li>
+        <li>Reliance on the individual</li>
+        <li>Lack of visibility of availability</li>
+          <li>Repeating the requests</li>
+<ul>
+</div>
+</div>
+
+<br>
+<h4>Efficient Alternatives</h4>
+<p>Lastly, we asked in the survey if the participants thought there is a more efficient way to request assets than the current email system. The majority wanted some sort of “portal” that is updated with the item image and its specs. A concern for a portal like this was that the items had to be prepared in advance so that requests are made minimally. The other popular alternative was a checklist or a form that the Sales team can fill out. They would individually check off which items they need and have a standardized format for each item. The list would have items that are not final to be marked off.</p>
+
+        <p class="quotes">“Our goal is to design a portal that has a form attached for special circumstances such as when the assets are unavailable or requiring another level of security.”</p>
+
+        <div class="text-two-column">
+        <div>
+          <div class="center icon">
+           <img src="images/com.png" alt="clipboard" />
+         </div>
+        <h5 class="center">Portal</h5>
+
+        <ul>
+          <li>Proactively updated</li>
+<li>Item details are uploaded to a central
+location</li>
+<li>Prepared and only request for special
+circumstances</li>
+<li>Private space for asset viewing with pre-
+imposed restrictions (i.e. certain classes of customers can only see and/or download certain assets)</li>
+        <ul>
+        </div>
+
+        <div>
+          <div class="center icon">
+           <img src="images/clipboard.png" alt="clipboard" />
+         </div>
+        <h5 class="center">Checklist / Form</h5>
+
+        <ul>
+          <li>Check off which items they need</li>
+          <li>Check off image resolution or style</li>
+          <li>The standard list of images and specs
+          that are accessible without having to
+          send a request</li>
+          <li>Mark the “not final” images ensure they
+          are not used for web/catalog</li>
+        <ul>
+        </div>
+        </div>
+
+<br>
+<h3>User Personas</h3>
+<p>Analyzing our survey results we were able to grasp requirements, constraints, pain points and motivations to better craft our user personas. One of the ways the personas have been reflected in our requirements is by eliminating information overload. Right now, their user journey flow is overwhelming with a constant stream of asset request email chains (journey maps are in the appendix). The biggest goals and motivations for these personas are keeping customers happy. With these personas, they will be able to respond to their customers at a much faster rate and allow the customer and sales team member to have an easier experience.</p>
+<div class="center shrink">
+   <img src="images/orb1.png" />
+ </div>
+ <div class="center shrink">
+    <img src="images/orb2.png" />
+  </div>
+  <div class="center shrink">
+     <img src="images/orb3.png" />
+   </div>
+<br>
+
+<h3>UX Design Requirements</h3>
+<br>
+<h4>Sales Team: Find, Download, & Share</h4>
+<p> <a class="gradient-text">Web system that reduces complication to find certain asset file types</a><br>Our research found the current system is time-consuming, we want to be able to offer users
+flexibility while not overwhelming them with massive amounts of assets, thus making the process
+easier and faster.</p>
+
+<p> <a class="gradient-text">Search functionality with sorting and filtering by brand, date, and item specs.
+</a><br>A strong search function with sorting and filtering needs to be in place to reduce the user’s struggle in finding assets and decrease the time they find the asset to forward to the customer.</p>
+<p> <a class="gradient-text">Create a direct sharing feature within the portal
+</a><br>Users are able to share the file directly from the portal instead of downloading and attaching it to
+an email. This feature would accelerate the asset request process giving the sales team an efficient
+way of sending assets to clients.</p>
+<p> <a class="gradient-text">Metadata Tags
+</a><br>Users can filter through assets based off of what metadata tags are attached. Tags can be applied to different asset types and file types.</p>
+<p> <a class="gradient-text">Form to fill out for special requests and when the asset is not online
+</a><br>Since only finalized assets will be included within the portal, a user needs the ability to access a
+request page where they can check off or fill out the specific item they need.</p>
+
+<h4>Asset Team: Upload and Update</h4>
+
+<p> <a class="gradient-text">Login authentication to upload as an Asset Manager</a><br>Only the asset team who are supposed to upload and update them should log in with an id and a
+password. This authentication would distinguish the role between regular users who need to find
+assets from back-end users who are providing those assets.</p> <p> <a class="gradient-text">Upload assets and proactively update them</a><br>
+Asset managers and designers need the ability to upload assets to the portal so that the most updated versions of each asset are present.</p>
+
+<h3>UX Design Process</h3>
+<p>Our UX design process was heavily centered around our design requirements from our research phase. We began by getting as many ideas as possible. Our group had a mini “design jam” where we all sketched out ideas for multiple screens on our project. By focusing on quantity and not quality, we were really able to develop creative and intuitive designs for our users. From there, we compiled our ideas and created a low-fidelity paper prototype to test.</p>
+
+<div class="center">
+   <img src="images/sitemap.png" />
+ </div>
+
+<h4>Early Ideas & Insights</h4>
+<p>Our early ideas consisted of a landing page with previewing the asset, search bar with Metadata Tags, upload pop-up, download pop-up, and request button changing to upload. We each assigned ourselves a different screen or a feature of the portal and sketched each functionality in detail. We create a few different options and decided as a team to go with the design that was most in line with our user personas and journeys. For example, the Search function was sketched out in two different versions. After looking at both versions, we decided as a team to choose the one that was going to be incorporated into one cohesive paper prototype.</p>
+
+<div class="three">
+  <div>
+     <img src="images/orb_search.jpg" />
+     <h5 class="center">Landing</h5>
+   </div>
+   <div>
+      <img src="images/orb_preview.jpg" />
+           <h5 class="center">Preview</h5>
+    </div>
+    <div>
+       <img src="images/orb_upload.jpg" />
+            <h5 class="center">Upload</h5>
+     </div>
+
+</div>
+<br>
+<h4>Intermediate Designs and Iterations</h4>
+<p>After gathering all of our ideas and creating a final paper prototype, we created a mid-fidelity prototype on Sketch. We wanted to turn the paper prototype into a medium fidelity prototype so that all of the group members could split up and conduct usability tests. We carried most of our elements from the paper prototype except some changes to the “view” options and the “add asset” button. We also added in the bread crumbs.</p>
+
+<div class="container">
+   <div>
+      <img src="images/orb_mid1.png"/>
+        <h5 class="center">Landing</h5>
+   </div>
+   <div>
+      <img src="images/orb_mid2.png"/>
+        <h5 class="center">Preview</h5>
+   </div>
+   <div>
+        <img src="images/orb_mid3.jpg"/>
+          <h5 class="center">Request</h5>
+   </div>
+   <div>
+    <img src="images/orb_mid4.png"/>
+      <h5 class="center">Upload</h5>
+   </div>
+</div>
+
+<p>These are the medium fidelity pages that we based our test off of and asked users what they would do to complete each task. Our usability test was based on our Task flow diagrams for the different user personas that are included in our Description and Flow section below.</p>
+<p>The test consisted of an introduction where we explained the background of the project to our participant, then asked a few introduction questions, and then lastly a post-questionnaire to get the user’s final thoughts and feedback. Additionally, throughout each usability test, we asked our participants to speak out loud and took notes and asked questions when necessary.</p>
+
+<h3>Final Design</h3>
+<p>Our final design is a stylish rendition of an asset management portal that was focused on complying with our UX design requirements. Because our system has two distinct users, we developed two user flows for both sales members and asset managers. We used these flows as guidelines for our designs and ensured that all actions shown in our flows were not only possible with our design but were efficient and enjoyable.</p>
+
+<div class="unicorn" id="prototype">
+    <video autoplay loop id="myVideo" src="videos/demo.mp4">
+        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+            <track src="audio_desc_en.vtt" kind="descriptions" srclang="en" label="english_description">
+                Your browser does not support HTML5 video.
+    </video>
+
+</div>
+<div class="center">
+  <button class="button info"  onclick="playVid()"><i class="fas fa-play"></i></button>
+  <button class="button info" onclick="pauseVid()"><i class="fas fa-pause"></i></button>
+</div>
+
+<script>
+  var vid = document.getElementById("myVideo");
+
+  function playVid() {
+    vid.play();
+  }
+
+  function pauseVid() {
+    vid.pause();
+  }
+  </script>
+
+<br>
+  <p class="gradient-text"><a href="https://projects.invisionapp.com/share/QKRADA5CSZ6#/screens">Click here</a> to view the live Interactive Prototype made with Sketch + InVision.</p>
+
+
+
+<h4>Login</h4>
+<p>The login process is where the users are distinguished as a “sales team” member or an “asset team” member. They will have different options and restrictions when using this portal. Below are two user flows displayed to represent how the different access rights can lead to their different tasks.</p>
+<div class="center shrink">
+   <img src="images/orb_login.png"/>
+</div>
+<h4>Search & Metadata Tags</h4>
+<p>We implemented a powerful search feature which users can search with keyword, asset ID, or pick multiple meta tags associated with assets in order to make their searching experience as simple as possible which also helps meet our requirements regarding effective search and metadata tag functions. Once you click on the “brand” category, all 30 ORB brands show up in a dropdown, sorted alphabetically.</p>
+<div class="center shrink">
+   <img src="images/orb_meta.png"/>
+</div>
+<h4>Organizational Hierarchy</h4>
+<p>Our site has an intuitive folder system that is sorted by brand, and also has a favorites feature where a user can have “favorite” folders that are instantly brought to the top of the folder hierarchy; this helps us meet the requirement of “reducing complication in finding assets.” Users can preview assets in a grid view or a list view. Both views help with organization hierarchy allowing them to sort the assets.</p>
+<div class="center shrink">
+   <img src="images/orb_org.png"/>
+</div>
+<h4>Share and Download</h4>
+<p>We implemented a share feature in which a user can preview an asset by simply clicking it, and from the preview page, the user will have the option to download or share the asset. We also included a request form that users can send to the asset team to receive work in progress assets and files. In addition to Sales Team requirements, we also developed Asset Manager requirements and designed for them as well.</p>
+
+<h4>Request Form</h4>
+  <p>A user needs the ability to access a request page where they can check off or fill out the specific item they need. User is able to send a request by filling out this form if the asset is missing on the portal.</p>
+<div class="center shrink">
+   <img src="images/orb_req.png"/>
+</div>
+
+<h4>Upload</h4>
+<div class="text-two-column">
+
+<div>
+  <p>The most important feature for asset managers is the upload feature, in which the user can upload both files and folders directly to the portal. Once the upload is in progress, a pop-up shows the progress of each file being uploaded and a green checkmark when each file is completed.</p>
+</div>
+<div class="center small">
+   <img src="images/orb_up.png"/>
+</div>
+</div>
+
+<h3>Validation</h3>
+<p>Because we do not have an actual platform other than the current email system to compare our designs, we are holding our requirements as the standard for a successful project and believe that if we meet them effectively our designs will be validated. Our main research questions are the following:</p>
+<ul>
+<li>Is our website intuitive and easy to use?</li>
+<li>How does our website compare to the current email system?</li>
+<li>Which functions are highly beneficial and which functions are unnecessary?</li>
+</ul>
+<div class="center small">
+   <img src="images/orb_test.png"/>
+</div>
+
+<p>To answer these research questions, we are conducting a usability testing with a set of tasks that sticks to the user workflows and our UX requirements. If we are able to confirm that these tasks easy and efficient through user testing, then we believe we will have successfully validated our designs. We interviewed the Sales and Asset team members who have previously used the email system for an open discussion, and we conducted user testing on family and friends to receive feedback and calculate the System Usability Scale score.</p>
+<p>For each of our tasks, we recorded how easy or hard it was on a scale of 1 (Very Difficult) to 5 (Very Easy) and noted any observations that we thought were important. Overall, the tasks were easy with no difficulty.</p>
+<h4>System Usability Scale</h4>
+<div class="center small">
+   <img src="images/orb_sus.png"/>
+</div>
+<p>In our post-questionnaire, we included the 10 questions to integrate the System Usability Scale to further validate our website using the “Likert scale.” The average SUS score came out to be 85, meaning that “people love your site and will recommend it to their friends.” The score of 80.3 or higher is an A.</p>
+
+
+<h3>Next Steps</h3>
+
+<p>Although our design was well received by our friends and families and the ORB team members, we did still receive multiple suggestions and insights as to what changes could me made moving forward. The majority of these adjustments came from our user interview with the Sales Team. Some were also brought to fruition via feedback we received from our usability tests with friends and family.</p>
+<ul>
+<li>Provide an option to download from multiple different folders in one single download.</li>
+<li>Compress the number of assets and allow for asset collection downloads.</li>
+<li>Include more flexibility and description in the asset request pop-up.</li>
+<li>Allow for a larger screen preview.</li>
+<li>Add a shareable link for asset collections</li>
+<li>Add ability to download an entire brand folder</li>
+<li>Change “Apply Filters” location and prominence</li>
+</ul>
+<br>
+<p>Due to time and resources, we understand the difficulty of implementing and coding our entire platform. We believe that our portal would be an ideal fit for ORBs needs and goals; however, there are many other DAM software available for purchase that could also satisfy these needs. From our time analyzing and studying these platforms, here are a few recommendations and possibilities for future DAM software to be potentially used by ORB.<p>
+
+  <ul>
+  <li><a class="gradient-text">Webdam</a> is a Data Asset Management software that has multiple functionalities and can be customized based on company needs. There is a bit of a learning curve to this software but once you get the hang of it, it is very powerful and useful. A few of our designs, particularly the grid/list views as well as the preview used Webdam as inspiration.</li>
+  <li><a class="gradient-text">Reftab</a> is another Asset Management Software that we found to be particularly effective. Reftab is centered around user customization – you can make your own categories and verbiage that the site will then use. It is a pretty simplistic design and is relatively easy to pick up to their site.</li>
+  <li><a class="gradient-text">Canto</a> is another prominent asset management tool that could assist you with your current needs and growth. The filtering and searching is effective and allows for lots of variety. Overall, the site is a bit complex and would certainly take some practice to use effectively, however this is likely the most powerful platform in terms of sheer functionality and possibilities. to their site.</li>
+  <li><a class="gradient-text">Tag Spaces</a> is a more modern file management platform that focuses heavily on searching and meta tags. The design is modern and rather aesthetically appealing but could be potentially hard to pick up. Much of our concepts for meta tag and search functions were inspired by this site. to their site.</li>
+  </ul>
+
+  <br>
+
+  <p>In conclusion, there are many platforms out there that could satisfy your needs, but these were our top findings from our research that we believe you could benefit from. Most of these sites have free trials and we strongly recommend checking them out and seeing if any of them call to you. </p>
 
          <footer>
+           <h5>More Projects</h5>
             <div class="six-grid">
+              <div id="cp">
+                 <a href="orb.html"><img  class="card icon" src="images/logos/logo_orb.jpg" alt="shareu home" />
+                 <p class="bold">ORB Toys Asset Portal</p>
+                   <p>Web UX Design</p></a>
+              </div>
                <div>
-                  <a href="shareu.html"><img id="cp" class="card" src="images/home/shareu.png" alt="shareu home" /></a>
+                  <a href="shareu.html"><img class="card icon" src="images/logos/logo_u.png" alt="shareu home" />
                   <p class="bold">ShareU</p>
+                    <p>Mobile UX Design</p></a>
                </div>
                <div>
-                  <a href="bah.html"><img class="card" src="images/home/BAH.png" alt="bah home" /></a>
-                  <p>Emergency Guidance</p>
+                  <a href="bah.html"><img class="card icon" src="images/logos/logo_bh.jpeg" alt="bah home" />
+                  <p class="bold">Emergency Guidance</p>
+                    <p>Mobile UX Design</p></a>
                </div>
                <div>
-                 <a href="spotify.html"><img class="card" src="images/home/spotify.png" alt="spotify home" /></a>
-                 <p>Spotify Home</p>
+                 <a href="spotify.html"><img class="card icon" src="images/logos/logo_sp.png" alt="spotify home" />
+                 <p class="bold">Spotify Home</p>
+                   <p>Mobile UX Case Study</p></a>
                </div>
                <div>
-                  <a href="umsi.html"><img class="card" src="images/home/umsi.png" alt="umsi home" /></a>
-                  <p>UMSI Courses</p>
+                  <a href="umsi.html"><img class="card icon" src="images/logos/logo_si.png" alt="umsi home" />
+                  <p class="bold">UMSI Courses</p>
+                    <p>Web UX Case Study</p></a>
                </div>
                <div>
-                  <a href="unicorn.html"><img class="card" src="images/home/unicorn.png" alt="unicorn home" /></a>
-                  <p>Unicorn Bubbles</p>
+                  <a href="unicorn.html"><img class="card icon" src="images/logos/logo_ub.png" alt="unicorn home" />
+                  <p class="bold">Unicorn Bubbles</p>
+                  <p>Kiosk UX Design</p></a>
                </div>
                <div>
-                 <a href="starbucks.html"><img class="card" src="images/home/starbucks.png" alt="starbucks home" /></a>
-                 <p>Starbucks & Happiness</p>
+                 <a href="starbucks.html"><img class="card icon" src="images/logos/logo_sb.jpeg" alt="starbucks home" />
+                 <p class="bold">Starbucks & Happiness</p>
+                 <p>Data Manipulation</p></a>
                </div>
             </div>
             <br>
             <a href="mailto:haelee@umich.edu" aria-label="mail icon"><i class="far fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/jennyhaeminlee" aria-label="linked in icon"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://instagram.com/amangoslime" aria-label="instagram icon"><i class="fab fa-instagram"></i></a>
-                  <p>Designed & Coded with 💓 <br>©️ April 2019</p>
+                  <p>Designed & Coded with 💓 <br>©️ May 2019</p>
+                  <br>
          </footer>
       </main>
    </body>
